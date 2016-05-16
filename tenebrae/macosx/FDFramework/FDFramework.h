@@ -10,7 +10,6 @@
 #import "FDAudioBuffer.h"
 #import "FDAudioFile.h"
 #import "FDAudioMixer.h"
-#import "FDBundleVersion.h"
 #import "FDDebug.h"
 #import "FDDefines.h"
 #import "FDDisplay.h"

@@ -67,6 +67,7 @@
 
 - (void) buildMenuForPath: (NSString*) path
 {
+    NSImage	* CDImg	= [[NSWorkspace sharedWorkspace] iconForFileType: NSFileTypeForHFSTypeCode(kGenericCDROMIcon)];
     [mAudioPopup removeAllItems];
     
     if ([path length] > 0)
@@ -86,7 +87,7 @@
         }
     }
     
-    [self addMenuItem: @"Audio CD" image: [NSImage imageNamed: @"AudioCD"] action: @selector (selectAudioCD:) object: nil];
+    [self addMenuItem: @"Audio CD" image: CDImg action: @selector (selectAudioCD:) object: nil];
     [self addMenuItem: nil image: nil action: nil object: nil];
     [self addMenuItem: @"Other..." image: nil action: @selector (selectOther:) object: nil];
     

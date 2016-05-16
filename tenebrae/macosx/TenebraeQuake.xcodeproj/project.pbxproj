@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5556CE031CE9693B00C027F3 /* libz.tbd in Frameworks */ = {isa = PBXBuildFile; fileRef = 5556CE021CE9693B00C027F3 /* libz.tbd */; };
+		5556CE051CE96A3C00C027F3 /* lex_part.l in Sources */ = {isa = PBXBuildFile; fileRef = 5556CE041CE96A3C00C027F3 /* lex_part.l */; };
 		D21E7AA1151C374A000D0F05 /* QReadMe.m in Sources */ = {isa = PBXBuildFile; fileRef = D21E7AA0151C374A000D0F05 /* QReadMe.m */; };
 		D21E7AA2151C3768000D0F05 /* TenebraeQuake.help in Resources */ = {isa = PBXBuildFile; fileRef = D278D170151C2FDB00654E30 /* TenebraeQuake.help */; };
 		D21E7AA4151C3789000D0F05 /* ReadMe.icns in Resources */ = {isa = PBXBuildFile; fileRef = D21E7AA3151C3789000D0F05 /* ReadMe.icns */; };
@@ -29,18 +31,6 @@
 		D2AA5B51150D5AF900EDE74B /* pngwrite.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B40150D5AF900EDE74B /* pngwrite.c */; };
 		D2AA5B52150D5AF900EDE74B /* pngwtran.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B41150D5AF900EDE74B /* pngwtran.c */; };
 		D2AA5B53150D5AF900EDE74B /* pngwutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B42150D5AF900EDE74B /* pngwutil.c */; };
-		D2AA5B6A150D5B4300EDE74B /* adler32.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B54150D5B4300EDE74B /* adler32.c */; };
-		D2AA5B6B150D5B4300EDE74B /* compress.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B55150D5B4300EDE74B /* compress.c */; };
-		D2AA5B6C150D5B4300EDE74B /* crc32.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B56150D5B4300EDE74B /* crc32.c */; };
-		D2AA5B6D150D5B4300EDE74B /* deflate.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B58150D5B4300EDE74B /* deflate.c */; };
-		D2AA5B6E150D5B4300EDE74B /* gzio.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B5A150D5B4300EDE74B /* gzio.c */; };
-		D2AA5B6F150D5B4300EDE74B /* infback.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B5B150D5B4300EDE74B /* infback.c */; };
-		D2AA5B70150D5B4300EDE74B /* inffast.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B5C150D5B4300EDE74B /* inffast.c */; };
-		D2AA5B71150D5B4300EDE74B /* inflate.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B5F150D5B4300EDE74B /* inflate.c */; };
-		D2AA5B72150D5B4300EDE74B /* inftrees.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B61150D5B4300EDE74B /* inftrees.c */; };
-		D2AA5B73150D5B4300EDE74B /* trees.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B63150D5B4300EDE74B /* trees.c */; };
-		D2AA5B74150D5B4300EDE74B /* uncompr.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B65150D5B4300EDE74B /* uncompr.c */; };
-		D2AA5B75150D5B4300EDE74B /* zutil.c in Sources */ = {isa = PBXBuildFile; fileRef = D2AA5B68150D5B4300EDE74B /* zutil.c */; };
 		D2C4EBCC150D4979005D60EF /* chase.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBCB150D4979005D60EF /* chase.c */; };
 		D2C4EBE3150D49C8005D60EF /* cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBCF150D49C8005D60EF /* cmd.c */; };
 		D2C4EBE4150D49C8005D60EF /* common.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD0150D49C8005D60EF /* common.c */; };
@@ -49,7 +39,6 @@
 		D2C4EBE7150D49C8005D60EF /* cvar.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD3150D49C8005D60EF /* cvar.c */; };
 		D2C4EBE8150D49C8005D60EF /* host_cmd.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD4150D49C8005D60EF /* host_cmd.c */; };
 		D2C4EBE9150D49C8005D60EF /* host.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD5150D49C8005D60EF /* host.c */; };
-		D2C4EBEA150D49C8005D60EF /* lex.yy.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD6150D49C8005D60EF /* lex.yy.c */; };
 		D2C4EBEB150D49C8005D60EF /* mathlib.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD7150D49C8005D60EF /* mathlib.c */; };
 		D2C4EBEC150D49C8005D60EF /* menu.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD8150D49C8005D60EF /* menu.c */; };
 		D2C4EBED150D49C8005D60EF /* pr_cmds.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EBD9150D49C8005D60EF /* pr_cmds.c */; };
@@ -108,7 +97,6 @@
 		D2C4EC8B150D4CA0005D60EF /* gl_warp.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EC70150D4CA0005D60EF /* gl_warp.c */; };
 		D2C4EC8C150D4CA0005D60EF /* r_part.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EC71150D4CA0005D60EF /* r_part.c */; };
 		D2C84A4E15CDC334008ACEB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2C84A4C15CDC334008ACEB2 /* InfoPlist.strings */; };
-		D2C84A5215CDC3A6008ACEB2 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D2C84A5115CDC3A6008ACEB2 /* Info.plist */; };
 		D2C8F089150D3CDC00835FDD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F088150D3CDC00835FDD /* Cocoa.framework */; };
 		D2C8F0E6150D3F8900835FDD /* FDAudioBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0BD150D3F8900835FDD /* FDAudioBuffer.m */; };
 		D2C8F0E7150D3F8900835FDD /* FDAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0BF150D3F8900835FDD /* FDAudioFile.m */; };
@@ -173,6 +161,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5556CE021CE9693B00C027F3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
+		5556CE041CE96A3C00C027F3 /* lex_part.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; name = lex_part.l; path = ../lex_part.l; sourceTree = "<group>"; };
 		D21E7AA0151C374A000D0F05 /* QReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QReadMe.m; sourceTree = "<group>"; };
 		D21E7AA3151C3789000D0F05 /* ReadMe.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = ReadMe.icns; path = Resources/Icons/ReadMe.icns; sourceTree = "<group>"; };
 		D278D170151C2FDB00654E30 /* TenebraeQuake.help */ = {isa = PBXFileReference; lastKnownFileType = folder; name = TenebraeQuake.help; path = Resources/TenebraeQuake.help; sourceTree = "<group>"; };
@@ -196,28 +186,6 @@
 		D2AA5B40150D5AF900EDE74B /* pngwrite.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwrite.c; path = "extlibs/libpng-1.2.10/pngwrite.c"; sourceTree = "<group>"; };
 		D2AA5B41150D5AF900EDE74B /* pngwtran.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwtran.c; path = "extlibs/libpng-1.2.10/pngwtran.c"; sourceTree = "<group>"; };
 		D2AA5B42150D5AF900EDE74B /* pngwutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pngwutil.c; path = "extlibs/libpng-1.2.10/pngwutil.c"; sourceTree = "<group>"; };
-		D2AA5B54150D5B4300EDE74B /* adler32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = adler32.c; path = "extlibs/zlib-1.2.3/adler32.c"; sourceTree = "<group>"; };
-		D2AA5B55150D5B4300EDE74B /* compress.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = compress.c; path = "extlibs/zlib-1.2.3/compress.c"; sourceTree = "<group>"; };
-		D2AA5B56150D5B4300EDE74B /* crc32.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = crc32.c; path = "extlibs/zlib-1.2.3/crc32.c"; sourceTree = "<group>"; };
-		D2AA5B57150D5B4300EDE74B /* crc32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = crc32.h; path = "extlibs/zlib-1.2.3/crc32.h"; sourceTree = "<group>"; };
-		D2AA5B58150D5B4300EDE74B /* deflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = deflate.c; path = "extlibs/zlib-1.2.3/deflate.c"; sourceTree = "<group>"; };
-		D2AA5B59150D5B4300EDE74B /* deflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = deflate.h; path = "extlibs/zlib-1.2.3/deflate.h"; sourceTree = "<group>"; };
-		D2AA5B5A150D5B4300EDE74B /* gzio.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = gzio.c; path = "extlibs/zlib-1.2.3/gzio.c"; sourceTree = "<group>"; };
-		D2AA5B5B150D5B4300EDE74B /* infback.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = infback.c; path = "extlibs/zlib-1.2.3/infback.c"; sourceTree = "<group>"; };
-		D2AA5B5C150D5B4300EDE74B /* inffast.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inffast.c; path = "extlibs/zlib-1.2.3/inffast.c"; sourceTree = "<group>"; };
-		D2AA5B5D150D5B4300EDE74B /* inffast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inffast.h; path = "extlibs/zlib-1.2.3/inffast.h"; sourceTree = "<group>"; };
-		D2AA5B5E150D5B4300EDE74B /* inffixed.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inffixed.h; path = "extlibs/zlib-1.2.3/inffixed.h"; sourceTree = "<group>"; };
-		D2AA5B5F150D5B4300EDE74B /* inflate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inflate.c; path = "extlibs/zlib-1.2.3/inflate.c"; sourceTree = "<group>"; };
-		D2AA5B60150D5B4300EDE74B /* inflate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inflate.h; path = "extlibs/zlib-1.2.3/inflate.h"; sourceTree = "<group>"; };
-		D2AA5B61150D5B4300EDE74B /* inftrees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = inftrees.c; path = "extlibs/zlib-1.2.3/inftrees.c"; sourceTree = "<group>"; };
-		D2AA5B62150D5B4300EDE74B /* inftrees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = inftrees.h; path = "extlibs/zlib-1.2.3/inftrees.h"; sourceTree = "<group>"; };
-		D2AA5B63150D5B4300EDE74B /* trees.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = trees.c; path = "extlibs/zlib-1.2.3/trees.c"; sourceTree = "<group>"; };
-		D2AA5B64150D5B4300EDE74B /* trees.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = trees.h; path = "extlibs/zlib-1.2.3/trees.h"; sourceTree = "<group>"; };
-		D2AA5B65150D5B4300EDE74B /* uncompr.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = uncompr.c; path = "extlibs/zlib-1.2.3/uncompr.c"; sourceTree = "<group>"; };
-		D2AA5B66150D5B4300EDE74B /* zconf.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zconf.h; path = "extlibs/zlib-1.2.3/zconf.h"; sourceTree = "<group>"; };
-		D2AA5B67150D5B4300EDE74B /* zlib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zlib.h; path = "extlibs/zlib-1.2.3/zlib.h"; sourceTree = "<group>"; };
-		D2AA5B68150D5B4300EDE74B /* zutil.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = zutil.c; path = "extlibs/zlib-1.2.3/zutil.c"; sourceTree = "<group>"; };
-		D2AA5B69150D5B4300EDE74B /* zutil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = zutil.h; path = "extlibs/zlib-1.2.3/zutil.h"; sourceTree = "<group>"; };
 		D2C4EBCB150D4979005D60EF /* chase.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = chase.c; path = ../chase.c; sourceTree = "<group>"; };
 		D2C4EBCF150D49C8005D60EF /* cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cmd.c; path = ../cmd.c; sourceTree = "<group>"; };
 		D2C4EBD0150D49C8005D60EF /* common.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = common.c; path = ../common.c; sourceTree = "<group>"; };
@@ -226,7 +194,6 @@
 		D2C4EBD3150D49C8005D60EF /* cvar.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = cvar.c; path = ../cvar.c; sourceTree = "<group>"; };
 		D2C4EBD4150D49C8005D60EF /* host_cmd.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = host_cmd.c; path = ../host_cmd.c; sourceTree = "<group>"; };
 		D2C4EBD5150D49C8005D60EF /* host.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = host.c; path = ../host.c; sourceTree = "<group>"; };
-		D2C4EBD6150D49C8005D60EF /* lex.yy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = lex.yy.c; path = ../lex.yy.c; sourceTree = "<group>"; };
 		D2C4EBD7150D49C8005D60EF /* mathlib.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = mathlib.c; path = ../mathlib.c; sourceTree = "<group>"; };
 		D2C4EBD8150D49C8005D60EF /* menu.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = menu.c; path = ../menu.c; sourceTree = "<group>"; };
 		D2C4EBD9150D49C8005D60EF /* pr_cmds.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; name = pr_cmds.c; path = ../pr_cmds.c; sourceTree = "<group>"; };
@@ -449,6 +416,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5556CE031CE9693B00C027F3 /* libz.tbd in Frameworks */,
 				D2C8F089150D3CDC00835FDD /* Cocoa.framework in Frameworks */,
 				D2C8F162150D45C400835FDD /* ApplicationServices.framework in Frameworks */,
 				D2C8F164150D45D800835FDD /* AudioToolbox.framework in Frameworks */,
@@ -473,7 +441,6 @@
 		D2AA5B2B150D5A7E00EDE74B /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
-				D2AA5B2E150D5AA700EDE74B /* libz */,
 				D2AA5B2C150D5A9E00EDE74B /* libpng */,
 			);
 			name = Libraries;
@@ -513,43 +480,6 @@
 			name = Headers;
 			sourceTree = "<group>";
 		};
-		D2AA5B2E150D5AA700EDE74B /* libz */ = {
-			isa = PBXGroup;
-			children = (
-				D2AA5B2F150D5AAB00EDE74B /* Headers */,
-				D2AA5B54150D5B4300EDE74B /* adler32.c */,
-				D2AA5B55150D5B4300EDE74B /* compress.c */,
-				D2AA5B56150D5B4300EDE74B /* crc32.c */,
-				D2AA5B58150D5B4300EDE74B /* deflate.c */,
-				D2AA5B5A150D5B4300EDE74B /* gzio.c */,
-				D2AA5B5B150D5B4300EDE74B /* infback.c */,
-				D2AA5B5C150D5B4300EDE74B /* inffast.c */,
-				D2AA5B5F150D5B4300EDE74B /* inflate.c */,
-				D2AA5B61150D5B4300EDE74B /* inftrees.c */,
-				D2AA5B63150D5B4300EDE74B /* trees.c */,
-				D2AA5B65150D5B4300EDE74B /* uncompr.c */,
-				D2AA5B68150D5B4300EDE74B /* zutil.c */,
-			);
-			name = libz;
-			sourceTree = "<group>";
-		};
-		D2AA5B2F150D5AAB00EDE74B /* Headers */ = {
-			isa = PBXGroup;
-			children = (
-				D2AA5B57150D5B4300EDE74B /* crc32.h */,
-				D2AA5B59150D5B4300EDE74B /* deflate.h */,
-				D2AA5B5D150D5B4300EDE74B /* inffast.h */,
-				D2AA5B5E150D5B4300EDE74B /* inffixed.h */,
-				D2AA5B60150D5B4300EDE74B /* inflate.h */,
-				D2AA5B62150D5B4300EDE74B /* inftrees.h */,
-				D2AA5B64150D5B4300EDE74B /* trees.h */,
-				D2AA5B66150D5B4300EDE74B /* zconf.h */,
-				D2AA5B67150D5B4300EDE74B /* zlib.h */,
-				D2AA5B69150D5B4300EDE74B /* zutil.h */,
-			);
-			name = Headers;
-			sourceTree = "<group>";
-		};
 		D2C4EBCA150D4965005D60EF /* TenebraeQuake */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,7 +504,7 @@
 				D2C4EBD3150D49C8005D60EF /* cvar.c */,
 				D2C4EBD4150D49C8005D60EF /* host_cmd.c */,
 				D2C4EBD5150D49C8005D60EF /* host.c */,
-				D2C4EBD6150D49C8005D60EF /* lex.yy.c */,
+				5556CE041CE96A3C00C027F3 /* lex_part.l */,
 				D2C4EBD7150D49C8005D60EF /* mathlib.c */,
 				D2C4EBD8150D49C8005D60EF /* menu.c */,
 				D2C4EBD9150D49C8005D60EF /* pr_cmds.c */,
@@ -827,6 +757,7 @@
 		D2C8F087150D3CDC00835FDD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				5556CE021CE9693B00C027F3 /* libz.tbd */,
 				D2C8F088150D3CDC00835FDD /* Cocoa.framework */,
 				D2C8F08A150D3CDC00835FDD /* Other Frameworks */,
 			);
@@ -1045,7 +976,7 @@
 		D2C8F07B150D3CDB00835FDD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0440;
+				LastUpgradeCheck = 0730;
 			};
 			buildConfigurationList = D2C8F07E150D3CDB00835FDD /* Build configuration list for PBXProject "TenebraeQuake" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -1073,7 +1004,6 @@
 			files = (
 				D21E7AA2151C3768000D0F05 /* TenebraeQuake.help in Resources */,
 				D21E7AA4151C3789000D0F05 /* ReadMe.icns in Resources */,
-				D2C84A5215CDC3A6008ACEB2 /* Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1163,7 +1093,6 @@
 				D2C4EBE7150D49C8005D60EF /* cvar.c in Sources */,
 				D2C4EBE8150D49C8005D60EF /* host_cmd.c in Sources */,
 				D2C4EBE9150D49C8005D60EF /* host.c in Sources */,
-				D2C4EBEA150D49C8005D60EF /* lex.yy.c in Sources */,
 				D2C4EBEB150D49C8005D60EF /* mathlib.c in Sources */,
 				D2C4EBEC150D49C8005D60EF /* menu.c in Sources */,
 				D2C4EBED150D49C8005D60EF /* pr_cmds.c in Sources */,
@@ -1194,6 +1123,7 @@
 				D2C4EC44150D4BC1005D60EF /* snd_dma.c in Sources */,
 				D2C4EC45150D4BC1005D60EF /* snd_mem.c in Sources */,
 				D2C4EC46150D4BC1005D60EF /* snd_mix.c in Sources */,
+				5556CE051CE96A3C00C027F3 /* lex_part.l in Sources */,
 				D2C4EC72150D4CA0005D60EF /* gl_aliasinstant.c in Sources */,
 				D2C4EC73150D4CA0005D60EF /* gl_brushinstant.c in Sources */,
 				D2C4EC74150D4CA0005D60EF /* gl_bumparb.c in Sources */,
@@ -1238,18 +1168,6 @@
 				D2AA5B51150D5AF900EDE74B /* pngwrite.c in Sources */,
 				D2AA5B52150D5AF900EDE74B /* pngwtran.c in Sources */,
 				D2AA5B53150D5AF900EDE74B /* pngwutil.c in Sources */,
-				D2AA5B6A150D5B4300EDE74B /* adler32.c in Sources */,
-				D2AA5B6B150D5B4300EDE74B /* compress.c in Sources */,
-				D2AA5B6C150D5B4300EDE74B /* crc32.c in Sources */,
-				D2AA5B6D150D5B4300EDE74B /* deflate.c in Sources */,
-				D2AA5B6E150D5B4300EDE74B /* gzio.c in Sources */,
-				D2AA5B6F150D5B4300EDE74B /* infback.c in Sources */,
-				D2AA5B70150D5B4300EDE74B /* inffast.c in Sources */,
-				D2AA5B71150D5B4300EDE74B /* inflate.c in Sources */,
-				D2AA5B72150D5B4300EDE74B /* inftrees.c in Sources */,
-				D2AA5B73150D5B4300EDE74B /* trees.c in Sources */,
-				D2AA5B74150D5B4300EDE74B /* uncompr.c in Sources */,
-				D2AA5B75150D5B4300EDE74B /* zutil.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1350,11 +1268,11 @@
 		D278D1A4151C367600654E30 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QPrefix.pch;
 				INFOPLIST_FILE = "Resources/Read Me/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake-readme";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1363,11 +1281,11 @@
 		D278D1A5151C367600654E30 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QPrefix.pch;
 				INFOPLIST_FILE = "Resources/Read Me/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake-readme";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1377,11 +1295,21 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"DEBUG=1",
@@ -1391,7 +1319,9 @@
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				ONLY_ACTIVE_ARCH = YES;
@@ -1403,15 +1333,26 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				COPY_PHASE_STRIP = YES;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_VERSION = com.apple.compilers.llvm.clang.1_0;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
 				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
 				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.7;
 				SDKROOT = macosx;
@@ -1421,7 +1362,6 @@
 		D2C8F0A3150D3CDC00835FDD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(NATIVE_ARCH_ACTUAL)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QPrefix.pch;
@@ -1431,6 +1371,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = Resources/Info.plist;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -1439,7 +1380,6 @@
 		D2C8F0A4150D3CDC00835FDD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QPrefix.pch;
@@ -1450,6 +1390,7 @@
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = Resources/Info.plist;
 				LLVM_LTO = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

@@ -357,7 +357,7 @@ qboolean R_MarkShadowSurf(msurface_t *surf, shadowlight_t *light)
 	}
 
 	//the normals are flipped when surf_planeback is 1
-	if ( abs(dist) > light->radius)
+	if ( fabsf(dist) > light->radius)
 	{
 		return false;
 	}
@@ -1334,7 +1334,7 @@ void PrecalcVolumesForLight(model_t *model) {
 			dist = DotProduct (currentshadowlight->origin, splitplane->normal) - splitplane->dist;
 
 
-			dist = abs(dist);
+			dist = fabsf(dist);
 
 			if (dist > currentshadowlight->radius) Con_Printf("Polygon to far\n");
 			ProjectPlane (currentshadowlight->origin, (*s), (*t), nearPt);

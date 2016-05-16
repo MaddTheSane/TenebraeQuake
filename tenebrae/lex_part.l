@@ -32,6 +32,8 @@ Basic lexing stuff returning tokens for keywords and storing semantics in global
 
 #include <stdio.h>
 #include "te_scripts.h"
+#include "quakedef.h"
+#include "console.h"
 
 #define MAX_STR_CONST 512
 

@@ -1543,7 +1543,7 @@ extern mirrorplane_t mirrorplanes[NUM_MIRROR_PLANES];
 extern int mirror_contents;
 extern int newenvmap;
 
-msurface_t	*causticschain;
+extern msurface_t	*causticschain;
 extern int	caustics_textures[8];
 extern qboolean	busy_caustics;
 

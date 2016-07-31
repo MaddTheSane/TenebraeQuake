@@ -10,7 +10,7 @@
 #import "QSoundPanel.h"
 #import "QShared.h"
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 //----------------------------------------------------------------------------------------------------------------------------
 

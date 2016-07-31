@@ -21,7 +21,7 @@
 #import "quakedef.h"
 #import "QController.h"
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 #import <sys/mount.h>
 

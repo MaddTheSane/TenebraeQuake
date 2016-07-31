@@ -1,0 +1,3 @@
+[submodule "tenebrae/macosx/FDFramework"]
+	path = tenebrae/macosx/FDFramework
+	url = https://github.com/MaddTheSane/FDFramework.git

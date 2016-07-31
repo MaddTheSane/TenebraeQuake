@@ -9,7 +9,7 @@
 
 #import "QSettingsPanel.h"
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 #import <Cocoa/Cocoa.h>
 

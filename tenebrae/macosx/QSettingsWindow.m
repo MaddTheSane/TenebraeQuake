@@ -13,7 +13,7 @@
 #import "QGLDisplaysPanel.h"
 #import "QSoundPanel.h"
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 //----------------------------------------------------------------------------------------------------------------------------
 

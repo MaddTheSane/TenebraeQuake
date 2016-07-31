@@ -23,7 +23,7 @@
 #import <IOKit/hidsystem/IOHIDLib.h>
 #import <IOKit/hid/IOHIDLib.h>
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 #import "quakedef.h"
 #import "in_osx.h"

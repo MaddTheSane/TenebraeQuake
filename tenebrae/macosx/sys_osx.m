@@ -78,7 +78,7 @@
 #import "sys_osx.h"
 #import "vid_osx.h"
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 //----------------------------------------------------------------------------------------------------------------------------
 

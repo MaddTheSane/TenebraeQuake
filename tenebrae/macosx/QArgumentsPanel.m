@@ -11,7 +11,7 @@
 #import "QArguments.h"
 #import "QShared.h"
 
-#import "FDFramework/FDPreferences.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 //----------------------------------------------------------------------------------------------------------------------------
 

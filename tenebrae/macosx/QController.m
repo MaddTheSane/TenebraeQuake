@@ -18,7 +18,7 @@
 #import "QArguments.h"
 #import "QShared.h"
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 #import "cd_osx.h"
 #import "in_osx.h"

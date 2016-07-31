@@ -9,7 +9,7 @@
 
 #import "QArgumentEdit.h"
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 //----------------------------------------------------------------------------------------------------------------------------
 

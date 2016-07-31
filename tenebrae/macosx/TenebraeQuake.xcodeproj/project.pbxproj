@@ -11,6 +11,8 @@
 		5556CE051CE96A3C00C027F3 /* lex_part.l in Sources */ = {isa = PBXBuildFile; fileRef = 5556CE041CE96A3C00C027F3 /* lex_part.l */; };
 		5592D89C1CE972D5006493C1 /* QIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592D89B1CE972D5006493C1 /* QIcons.xcassets */; };
 		5592D89E1CE97316006493C1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592D89D1CE97316006493C1 /* Media.xcassets */; };
+		55FE60001D4EC2C600FBBA91 /* FruitzOfDojo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; };
+		55FE60011D4EC2C600FBBA91 /* FruitzOfDojo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D21E7AA1151C374A000D0F05 /* QReadMe.m in Sources */ = {isa = PBXBuildFile; fileRef = D21E7AA0151C374A000D0F05 /* QReadMe.m */; };
 		D21E7AA2151C3768000D0F05 /* TenebraeQuake.help in Resources */ = {isa = PBXBuildFile; fileRef = D278D170151C2FDB00654E30 /* TenebraeQuake.help */; };
 		D278D171151C2FDB00654E30 /* TenebraeQuake.help in Resources */ = {isa = PBXBuildFile; fileRef = D278D170151C2FDB00654E30 /* TenebraeQuake.help */; };
@@ -99,26 +101,6 @@
 		D2C4EC8C150D4CA0005D60EF /* r_part.c in Sources */ = {isa = PBXBuildFile; fileRef = D2C4EC71150D4CA0005D60EF /* r_part.c */; };
 		D2C84A4E15CDC334008ACEB2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D2C84A4C15CDC334008ACEB2 /* InfoPlist.strings */; };
 		D2C8F089150D3CDC00835FDD /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F088150D3CDC00835FDD /* Cocoa.framework */; };
-		D2C8F0E6150D3F8900835FDD /* FDAudioBuffer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0BD150D3F8900835FDD /* FDAudioBuffer.m */; };
-		D2C8F0E7150D3F8900835FDD /* FDAudioFile.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0BF150D3F8900835FDD /* FDAudioFile.m */; };
-		D2C8F0E8150D3F8900835FDD /* FDAudioMixer.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0C2150D3F8900835FDD /* FDAudioMixer.m */; };
-		D2C8F0E9150D3F8900835FDD /* FDBundleVersion.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0C4150D3F8900835FDD /* FDBundleVersion.m */; };
-		D2C8F0EA150D3F8900835FDD /* FDDebug.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0C6150D3F8900835FDD /* FDDebug.m */; };
-		D2C8F0EB150D3F8900835FDD /* FDDisplay.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0C9150D3F8900835FDD /* FDDisplay.m */; };
-		D2C8F0EC150D3F8900835FDD /* FDDisplayMode.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0CB150D3F8900835FDD /* FDDisplayMode.m */; };
-		D2C8F0ED150D3F8900835FDD /* FDGLScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0CE150D3F8900835FDD /* FDGLScreenshot.m */; };
-		D2C8F0EE150D3F8900835FDD /* FDHIDActuator.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0D0150D3F8900835FDD /* FDHIDActuator.m */; };
-		D2C8F0EF150D3F8900835FDD /* FDHIDDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0D2150D3F8900835FDD /* FDHIDDevice.m */; };
-		D2C8F0F0150D3F8900835FDD /* FDHIDGamePad.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0D3150D3F8900835FDD /* FDHIDGamePad.m */; };
-		D2C8F0F1150D3F8900835FDD /* FDHIDKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0D5150D3F8900835FDD /* FDHIDKeyboard.m */; };
-		D2C8F0F2150D3F8900835FDD /* FDHIDManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0D7150D3F8900835FDD /* FDHIDManager.m */; };
-		D2C8F0F3150D3F8900835FDD /* FDHIDMouse.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0D8150D3F8900835FDD /* FDHIDMouse.m */; };
-		D2C8F0F4150D3F8900835FDD /* FDLinkView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0DA150D3F8900835FDD /* FDLinkView.m */; };
-		D2C8F0F5150D3F8900835FDD /* FDModifierCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0DC150D3F8900835FDD /* FDModifierCheck.m */; };
-		D2C8F0F6150D3F8900835FDD /* FDPreferences.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0DE150D3F8900835FDD /* FDPreferences.m */; };
-		D2C8F0F7150D3F8900835FDD /* FDScreenshot.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0E0150D3F8900835FDD /* FDScreenshot.m */; };
-		D2C8F0F8150D3F8900835FDD /* FDView.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0E2150D3F8900835FDD /* FDView.m */; };
-		D2C8F0F9150D3F8900835FDD /* FDWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0E5150D3F8900835FDD /* FDWindow.m */; };
 		D2C8F106150D437C00835FDD /* QAboutPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0FB150D437C00835FDD /* QAboutPanel.m */; };
 		D2C8F107150D437C00835FDD /* QArgumentEdit.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0FD150D437C00835FDD /* QArgumentEdit.m */; };
 		D2C8F108150D437C00835FDD /* QArgumentsPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F0FF150D437C00835FDD /* QArgumentsPanel.m */; };
@@ -154,11 +136,50 @@
 		D2C8F16C150D462B00835FDD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F16B150D462B00835FDD /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		55FE5FFC1D4EC2AE00FBBA91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 556478241CECEE1000ECD01B;
+			remoteInfo = FruitzOfDojo;
+		};
+		55FE5FFE1D4EC2AE00FBBA91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 55F926101CED18F900145952;
+			remoteInfo = FruitzOfDojoSwift;
+		};
+		55FE60021D4EC2C600FBBA91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 556478231CECEE1000ECD01B;
+			remoteInfo = FruitzOfDojo;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		55FE60041D4EC2C600FBBA91 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55FE60011D4EC2C600FBBA91 /* FruitzOfDojo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		5556CE021CE9693B00C027F3 /* libz.tbd */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.text-based-dylib-definition"; name = libz.tbd; path = usr/lib/libz.tbd; sourceTree = SDKROOT; };
 		5556CE041CE96A3C00C027F3 /* lex_part.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = lex_part.l; sourceTree = "<group>"; };
 		5592D89B1CE972D5006493C1 /* QIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QIcons.xcassets; sourceTree = "<group>"; };
 		5592D89D1CE97316006493C1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FruitzOfDojo.xcodeproj; path = FDFramework/FruitzOfDojo.xcodeproj; sourceTree = "<group>"; };
 		D21E7AA0151C374A000D0F05 /* QReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QReadMe.m; sourceTree = "<group>"; };
 		D278D170151C2FDB00654E30 /* TenebraeQuake.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TenebraeQuake.help; sourceTree = "<group>"; };
 		D278D18F151C367600654E30 /* Read Me.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Read Me.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -296,48 +317,6 @@
 		D2C8F08B150D3CDC00835FDD /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		D2C8F08C150D3CDC00835FDD /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D2C8F08D150D3CDC00835FDD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		D2C8F0BC150D3F8900835FDD /* FDAudioBuffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAudioBuffer.h; sourceTree = "<group>"; };
-		D2C8F0BD150D3F8900835FDD /* FDAudioBuffer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAudioBuffer.m; sourceTree = "<group>"; };
-		D2C8F0BE150D3F8900835FDD /* FDAudioFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAudioFile.h; sourceTree = "<group>"; };
-		D2C8F0BF150D3F8900835FDD /* FDAudioFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAudioFile.m; sourceTree = "<group>"; };
-		D2C8F0C0150D3F8900835FDD /* FDAudioInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAudioInternal.h; sourceTree = "<group>"; };
-		D2C8F0C1150D3F8900835FDD /* FDAudioMixer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDAudioMixer.h; sourceTree = "<group>"; };
-		D2C8F0C2150D3F8900835FDD /* FDAudioMixer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDAudioMixer.m; sourceTree = "<group>"; };
-		D2C8F0C3150D3F8900835FDD /* FDBundleVersion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDBundleVersion.h; sourceTree = "<group>"; };
-		D2C8F0C4150D3F8900835FDD /* FDBundleVersion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDBundleVersion.m; sourceTree = "<group>"; };
-		D2C8F0C5150D3F8900835FDD /* FDDebug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDebug.h; sourceTree = "<group>"; };
-		D2C8F0C6150D3F8900835FDD /* FDDebug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDebug.m; sourceTree = "<group>"; };
-		D2C8F0C7150D3F8900835FDD /* FDDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDefines.h; sourceTree = "<group>"; };
-		D2C8F0C8150D3F8900835FDD /* FDDisplay.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDisplay.h; sourceTree = "<group>"; };
-		D2C8F0C9150D3F8900835FDD /* FDDisplay.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDisplay.m; sourceTree = "<group>"; };
-		D2C8F0CA150D3F8900835FDD /* FDDisplayMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDDisplayMode.h; sourceTree = "<group>"; };
-		D2C8F0CB150D3F8900835FDD /* FDDisplayMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDDisplayMode.m; sourceTree = "<group>"; };
-		D2C8F0CC150D3F8900835FDD /* FDFramework.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDFramework.h; sourceTree = "<group>"; };
-		D2C8F0CD150D3F8900835FDD /* FDGLScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDGLScreenshot.h; sourceTree = "<group>"; };
-		D2C8F0CE150D3F8900835FDD /* FDGLScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDGLScreenshot.m; sourceTree = "<group>"; };
-		D2C8F0CF150D3F8900835FDD /* FDHIDActuator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDHIDActuator.h; sourceTree = "<group>"; };
-		D2C8F0D0150D3F8900835FDD /* FDHIDActuator.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHIDActuator.m; sourceTree = "<group>"; };
-		D2C8F0D1150D3F8900835FDD /* FDHIDDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDHIDDevice.h; sourceTree = "<group>"; };
-		D2C8F0D2150D3F8900835FDD /* FDHIDDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHIDDevice.m; sourceTree = "<group>"; };
-		D2C8F0D3150D3F8900835FDD /* FDHIDGamePad.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHIDGamePad.m; sourceTree = "<group>"; };
-		D2C8F0D4150D3F8900835FDD /* FDHIDInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDHIDInternal.h; sourceTree = "<group>"; };
-		D2C8F0D5150D3F8900835FDD /* FDHIDKeyboard.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHIDKeyboard.m; sourceTree = "<group>"; };
-		D2C8F0D6150D3F8900835FDD /* FDHIDManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDHIDManager.h; sourceTree = "<group>"; };
-		D2C8F0D7150D3F8900835FDD /* FDHIDManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHIDManager.m; sourceTree = "<group>"; };
-		D2C8F0D8150D3F8900835FDD /* FDHIDMouse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDHIDMouse.m; sourceTree = "<group>"; };
-		D2C8F0D9150D3F8900835FDD /* FDLinkView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDLinkView.h; sourceTree = "<group>"; };
-		D2C8F0DA150D3F8900835FDD /* FDLinkView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDLinkView.m; sourceTree = "<group>"; };
-		D2C8F0DB150D3F8900835FDD /* FDModifierCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDModifierCheck.h; sourceTree = "<group>"; };
-		D2C8F0DC150D3F8900835FDD /* FDModifierCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDModifierCheck.m; sourceTree = "<group>"; };
-		D2C8F0DD150D3F8900835FDD /* FDPreferences.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDPreferences.h; sourceTree = "<group>"; };
-		D2C8F0DE150D3F8900835FDD /* FDPreferences.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDPreferences.m; sourceTree = "<group>"; };
-		D2C8F0DF150D3F8900835FDD /* FDScreenshot.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDScreenshot.h; sourceTree = "<group>"; };
-		D2C8F0E0150D3F8900835FDD /* FDScreenshot.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDScreenshot.m; sourceTree = "<group>"; };
-		D2C8F0E1150D3F8900835FDD /* FDView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDView.h; sourceTree = "<group>"; };
-		D2C8F0E2150D3F8900835FDD /* FDView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDView.m; sourceTree = "<group>"; };
-		D2C8F0E3150D3F8900835FDD /* FDViewInternal.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDViewInternal.h; sourceTree = "<group>"; };
-		D2C8F0E4150D3F8900835FDD /* FDWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FDWindow.h; sourceTree = "<group>"; };
-		D2C8F0E5150D3F8900835FDD /* FDWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FDWindow.m; sourceTree = "<group>"; };
 		D2C8F0FA150D437C00835FDD /* QAboutPanel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QAboutPanel.h; sourceTree = "<group>"; };
 		D2C8F0FB150D437C00835FDD /* QAboutPanel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QAboutPanel.m; sourceTree = "<group>"; };
 		D2C8F0FC150D437C00835FDD /* QArgumentEdit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QArgumentEdit.h; sourceTree = "<group>"; };
@@ -409,6 +388,7 @@
 				D2C8F162150D45C400835FDD /* ApplicationServices.framework in Frameworks */,
 				D2C8F164150D45D800835FDD /* AudioToolbox.framework in Frameworks */,
 				D2C8F166150D45EE00835FDD /* AudioUnit.framework in Frameworks */,
+				55FE60001D4EC2C600FBBA91 /* FruitzOfDojo.framework in Frameworks */,
 				D2C8F168150D460200835FDD /* ForceFeedback.framework in Frameworks */,
 				D2C8F16A150D461D00835FDD /* IOKit.framework in Frameworks */,
 				D2C8F16C150D462B00835FDD /* OpenGL.framework in Frameworks */,
@@ -418,6 +398,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		55FE5FF81D4EC2AE00FBBA91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */,
+				55FE5FFF1D4EC2AE00FBBA91 /* FruitzOfDojoSwift.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D21E7A9E151C3739000D0F05 /* Read Me */ = {
 			isa = PBXGroup;
 			children = (
@@ -776,7 +765,7 @@
 		D2C8F0B7150D3F3400835FDD /* MacOS X */ = {
 			isa = PBXGroup;
 			children = (
-				D2C8F0B8150D3F4000835FDD /* FDFramework */,
+				55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */,
 				D2C8F0B9150D3F4B00835FDD /* Settings */,
 				D2C8F10C150D43D900835FDD /* cd_osx.h */,
 				D2C8F10D150D43D900835FDD /* cd_osx.m */,
@@ -803,34 +792,6 @@
 			name = "MacOS X";
 			sourceTree = "<group>";
 		};
-		D2C8F0B8150D3F4000835FDD /* FDFramework */ = {
-			isa = PBXGroup;
-			children = (
-				D2C8F0BB150D3F7200835FDD /* Source */,
-				D2C8F0BC150D3F8900835FDD /* FDAudioBuffer.h */,
-				D2C8F0BE150D3F8900835FDD /* FDAudioFile.h */,
-				D2C8F0C1150D3F8900835FDD /* FDAudioMixer.h */,
-				D2C8F0C3150D3F8900835FDD /* FDBundleVersion.h */,
-				D2C8F0C5150D3F8900835FDD /* FDDebug.h */,
-				D2C8F0C7150D3F8900835FDD /* FDDefines.h */,
-				D2C8F0C8150D3F8900835FDD /* FDDisplay.h */,
-				D2C8F0CA150D3F8900835FDD /* FDDisplayMode.h */,
-				D2C8F0CC150D3F8900835FDD /* FDFramework.h */,
-				D2C8F0CD150D3F8900835FDD /* FDGLScreenshot.h */,
-				D2C8F0CF150D3F8900835FDD /* FDHIDActuator.h */,
-				D2C8F0D1150D3F8900835FDD /* FDHIDDevice.h */,
-				D2C8F0D4150D3F8900835FDD /* FDHIDInternal.h */,
-				D2C8F0D6150D3F8900835FDD /* FDHIDManager.h */,
-				D2C8F0D9150D3F8900835FDD /* FDLinkView.h */,
-				D2C8F0DB150D3F8900835FDD /* FDModifierCheck.h */,
-				D2C8F0DD150D3F8900835FDD /* FDPreferences.h */,
-				D2C8F0DF150D3F8900835FDD /* FDScreenshot.h */,
-				D2C8F0E1150D3F8900835FDD /* FDView.h */,
-				D2C8F0E4150D3F8900835FDD /* FDWindow.h */,
-			);
-			path = FDFramework;
-			sourceTree = "<group>";
-		};
 		D2C8F0B9150D3F4B00835FDD /* Settings */ = {
 			isa = PBXGroup;
 			children = (
@@ -848,35 +809,6 @@
 				D2C8F105150D437C00835FDD /* QSoundPanel.m */,
 			);
 			name = Settings;
-			sourceTree = "<group>";
-		};
-		D2C8F0BB150D3F7200835FDD /* Source */ = {
-			isa = PBXGroup;
-			children = (
-				D2C8F0BD150D3F8900835FDD /* FDAudioBuffer.m */,
-				D2C8F0BF150D3F8900835FDD /* FDAudioFile.m */,
-				D2C8F0C0150D3F8900835FDD /* FDAudioInternal.h */,
-				D2C8F0C2150D3F8900835FDD /* FDAudioMixer.m */,
-				D2C8F0C4150D3F8900835FDD /* FDBundleVersion.m */,
-				D2C8F0C6150D3F8900835FDD /* FDDebug.m */,
-				D2C8F0C9150D3F8900835FDD /* FDDisplay.m */,
-				D2C8F0CB150D3F8900835FDD /* FDDisplayMode.m */,
-				D2C8F0CE150D3F8900835FDD /* FDGLScreenshot.m */,
-				D2C8F0D0150D3F8900835FDD /* FDHIDActuator.m */,
-				D2C8F0D2150D3F8900835FDD /* FDHIDDevice.m */,
-				D2C8F0D3150D3F8900835FDD /* FDHIDGamePad.m */,
-				D2C8F0D5150D3F8900835FDD /* FDHIDKeyboard.m */,
-				D2C8F0D7150D3F8900835FDD /* FDHIDManager.m */,
-				D2C8F0D8150D3F8900835FDD /* FDHIDMouse.m */,
-				D2C8F0DA150D3F8900835FDD /* FDLinkView.m */,
-				D2C8F0DC150D3F8900835FDD /* FDModifierCheck.m */,
-				D2C8F0DE150D3F8900835FDD /* FDPreferences.m */,
-				D2C8F0E0150D3F8900835FDD /* FDScreenshot.m */,
-				D2C8F0E2150D3F8900835FDD /* FDView.m */,
-				D2C8F0E3150D3F8900835FDD /* FDViewInternal.h */,
-				D2C8F0E5150D3F8900835FDD /* FDWindow.m */,
-			);
-			name = Source;
 			sourceTree = "<group>";
 		};
 		D2C8F12B150D441900835FDD /* Resources */ = {
@@ -937,10 +869,12 @@
 				D2C8F080150D3CDC00835FDD /* Sources */,
 				D2C8F081150D3CDC00835FDD /* Frameworks */,
 				D2C8F082150D3CDC00835FDD /* Resources */,
+				55FE60041D4EC2C600FBBA91 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55FE60031D4EC2C600FBBA91 /* PBXTargetDependency */,
 			);
 			name = TenebraeQuake;
 			productName = TenebraeQuake;
@@ -966,6 +900,12 @@
 			mainGroup = D2C8F079150D3CDB00835FDD;
 			productRefGroup = D2C8F085150D3CDC00835FDD /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 55FE5FF81D4EC2AE00FBBA91 /* Products */;
+					ProjectRef = 55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D2C8F083150D3CDC00835FDD /* TenebraeQuake */,
@@ -973,6 +913,23 @@
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FruitzOfDojo.framework;
+			remoteRef = 55FE5FFC1D4EC2AE00FBBA91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		55FE5FFF1D4EC2AE00FBBA91 /* FruitzOfDojoSwift.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = FruitzOfDojoSwift.framework;
+			remoteRef = 55FE5FFE1D4EC2AE00FBBA91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D278D18D151C367600654E30 /* Resources */ = {
@@ -1020,26 +977,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D2C8F0E6150D3F8900835FDD /* FDAudioBuffer.m in Sources */,
-				D2C8F0E7150D3F8900835FDD /* FDAudioFile.m in Sources */,
-				D2C8F0E8150D3F8900835FDD /* FDAudioMixer.m in Sources */,
-				D2C8F0E9150D3F8900835FDD /* FDBundleVersion.m in Sources */,
-				D2C8F0EA150D3F8900835FDD /* FDDebug.m in Sources */,
-				D2C8F0EB150D3F8900835FDD /* FDDisplay.m in Sources */,
-				D2C8F0EC150D3F8900835FDD /* FDDisplayMode.m in Sources */,
-				D2C8F0ED150D3F8900835FDD /* FDGLScreenshot.m in Sources */,
-				D2C8F0EE150D3F8900835FDD /* FDHIDActuator.m in Sources */,
-				D2C8F0EF150D3F8900835FDD /* FDHIDDevice.m in Sources */,
-				D2C8F0F0150D3F8900835FDD /* FDHIDGamePad.m in Sources */,
-				D2C8F0F1150D3F8900835FDD /* FDHIDKeyboard.m in Sources */,
-				D2C8F0F2150D3F8900835FDD /* FDHIDManager.m in Sources */,
-				D2C8F0F3150D3F8900835FDD /* FDHIDMouse.m in Sources */,
-				D2C8F0F4150D3F8900835FDD /* FDLinkView.m in Sources */,
-				D2C8F0F5150D3F8900835FDD /* FDModifierCheck.m in Sources */,
-				D2C8F0F6150D3F8900835FDD /* FDPreferences.m in Sources */,
-				D2C8F0F7150D3F8900835FDD /* FDScreenshot.m in Sources */,
-				D2C8F0F8150D3F8900835FDD /* FDView.m in Sources */,
-				D2C8F0F9150D3F8900835FDD /* FDWindow.m in Sources */,
 				D2C8F106150D437C00835FDD /* QAboutPanel.m in Sources */,
 				D2C8F107150D437C00835FDD /* QArgumentEdit.m in Sources */,
 				D2C8F108150D437C00835FDD /* QArgumentsPanel.m in Sources */,
@@ -1143,6 +1080,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		55FE60031D4EC2C600FBBA91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FruitzOfDojo;
+			targetProxy = 55FE60021D4EC2C600FBBA91 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D2C84A4C15CDC334008ACEB2 /* InfoPlist.strings */ = {
@@ -1356,6 +1301,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1375,6 +1321,7 @@
 				);
 				GCC_PREPROCESSOR_DEFINITIONS_NOT_USED_IN_PRECOMPS = "";
 				INFOPLIST_FILE = Resources/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				LLVM_LTO = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -9,7 +9,7 @@
 
 #import "QArguments.h"
 
-#import "FDFramework/FDPreferences.h"
+#import <FruitzOfDojo/FDPreferences.h>
 
 //----------------------------------------------------------------------------------------------------------------------------
 

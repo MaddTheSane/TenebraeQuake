@@ -18,12 +18,12 @@
 
 #import "cd_osx.h"
 
-#import "quakedef.h"
+#include "quakedef.h"
 #import "QController.h"
 
 #import <FruitzOfDojo/FruitzOfDojo.h>
 
-#import <sys/mount.h>
+#include <sys/mount.h>
 
 //----------------------------------------------------------------------------------------------------------------------------
 

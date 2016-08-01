@@ -508,7 +508,7 @@ void GL_DrawPentaAliasFrame (aliashdr_t *paliashdr, int posenum) {
 	plane_t		*planes;
 	int i,j;
 
-	return;
+	//return;
 
 	//verts = apverts;
 	verts = (ftrivertx_t *)((byte *)paliashdr + paliashdr->posedata);
@@ -2575,13 +2575,13 @@ void R_Mirror (mirrorplane_t *mir)
 	d = DotProduct (r_refdef.vieworg, mir->plane.normal) - mir->plane.dist;
 
 	//camera is to far away from mirror don't update it...
-	if (abs(d) > mir_distance.value) {
+	if (fabsf(d) > mir_distance.value) {
 		mirror = false;
 		return;
 	}
 
 	//player is very close to mirror don't draw it since he interects it and this gives bad artefacts
-	if (abs(d) < MIN_PLAYER_MIRROR) {
+	if (fabsf(d) < MIN_PLAYER_MIRROR) {
 		drawplayer = false;
 	} else {
 		drawplayer = true;

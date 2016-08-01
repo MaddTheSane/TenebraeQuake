@@ -26,16 +26,15 @@
 //----------------------------------------------------------------------------------------------------------------------------
 
 #define QUAKE_PREFS_VALUE_BASE_PATH         @"id1"
-#define	QUAKE_PREFS_VALUE_OPTION_KEY        [NSNumber numberWithBool: NO]
+#define	QUAKE_PREFS_VALUE_OPTION_KEY        @NO
 #define QUAKE_PREFS_VALUE_AUDIO_PATH        @""
 #define QUAKE_PREFS_VALUE_ARGUMENTS         [NSArray array]
 #define QUAKE_PREFS_VALUE_GL_DISPLAY        @"0"
 #define	QUAKE_PREFS_VALUE_GL_DISPLAY_MODE   @"640x480 0Hz"
-#define QUAKE_PREFS_VALUE_GL_COLORS         [NSNumber numberWithInt: 32]
-#define	QUAKE_PREFS_VALUE_GL_SAMPLES        [NSNumber numberWithInt: 0]
-#define QUAKE_PREFS_VALUE_GL_FADE_ALL       [NSNumber numberWithBool: YES]
-#define	QUAKE_PREFS_VALUE_GL_FORCE_GENERIC  [NSNumber numberWithBool: NO]
-#define	QUAKE_PREFS_VALUE_GL_FULLSCREEN     [NSNumber numberWithBool: YES]
-#define	QUAKE_PREFS_VALUE_OPTION_KEY        [NSNumber numberWithBool: NO]
+#define QUAKE_PREFS_VALUE_GL_COLORS         @32
+#define	QUAKE_PREFS_VALUE_GL_SAMPLES        @0
+#define QUAKE_PREFS_VALUE_GL_FADE_ALL       @YES
+#define	QUAKE_PREFS_VALUE_GL_FORCE_GENERIC  @NO
+#define	QUAKE_PREFS_VALUE_GL_FULLSCREEN     @YES
 
 //----------------------------------------------------------------------------------------------------------------------------

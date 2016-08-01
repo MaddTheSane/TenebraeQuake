@@ -46,37 +46,37 @@
 #import <AppKit/AppKit.h>
 #import <Cocoa/Cocoa.h>
 #import <Foundation/Foundation.h>
-#import <mach/mach_time.h>
+#include <mach/mach_time.h>
 
-#import <dlfcn.h>
-#import <unistd.h>
-#import <signal.h>
-#import <stdlib.h>
-#import <limits.h>
-#import <sys/time.h>
-#import <sys/types.h>
-#import <unistd.h>
-#import <fcntl.h>
-#import <stdarg.h>
-#import <stdio.h>
-#import <sys/ipc.h>
-#import <sys/shm.h>
-#import <sys/stat.h>
-#import <string.h>
-#import <ctype.h>
-#import <sys/wait.h>
-#import <sys/mman.h>
-#import <sys/param.h>
-#import <errno.h>
+#include <dlfcn.h>
+#include <unistd.h>
+#include <signal.h>
+#include <stdlib.h>
+#include <limits.h>
+#include <sys/time.h>
+#include <sys/types.h>
+#include <unistd.h>
+#include <fcntl.h>
+#include <stdarg.h>
+#include <stdio.h>
+#include <sys/ipc.h>
+#include <sys/shm.h>
+#include <sys/stat.h>
+#include <string.h>
+#include <ctype.h>
+#include <sys/wait.h>
+#include <sys/mman.h>
+#include <sys/param.h>
+#include <errno.h>
 
-#import "quakedef.h"
+#include "quakedef.h"
 #import "QApplication.h"
 #import "QController.h"
 #import "QShared.h"
 
-#import "in_osx.h"
-#import "sys_osx.h"
-#import "vid_osx.h"
+#include "in_osx.h"
+#include "sys_osx.h"
+#include "vid_osx.h"
 
 #import <FruitzOfDojo/FruitzOfDojo.h>
 

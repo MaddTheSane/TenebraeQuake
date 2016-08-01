@@ -7,7 +7,7 @@
 //
 //----------------------------------------------------------------------------------------------------------------------------
 
-#import "FDFramework/FDFramework.h"
+#import <FruitzOfDojo/FruitzOfDojo.h>
 
 #import <AppKit/AppKit.h>
 

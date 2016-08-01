@@ -759,7 +759,7 @@ qboolean CheckLightUpdate(entity_t *e, aliashdr_t *paliashdr, aliaslightinstant_
 		(dist(ins->lastlorg,currentshadowlight->origin) < DIST_DELTA) &&
 		(dist(ins->lasteorg,e->origin) < DIST_DELTA) &&
 		(dist(ins->lasteangles,e->angles) < ANG_DELTA) &&
-		(abs(ins->lastlradius - currentshadowlight->radius) <= RADIUS_DELTA) &&
+		(fabsf(ins->lastlradius - currentshadowlight->radius) <= RADIUS_DELTA) &&
 		(ins->lastframeinstant == aliasframeinstant) &&
 		(aliasframeinstant->updateframe != r_framecount))
 	{

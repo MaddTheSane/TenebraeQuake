@@ -19,16 +19,16 @@
 //----------------------------------------------------------------------------------------------------------------------------
 
 #import <AppKit/AppKit.h>
-#import <IOKit/IOKitLib.h>
-#import <IOKit/hidsystem/IOHIDLib.h>
-#import <IOKit/hid/IOHIDLib.h>
+#include <IOKit/IOKitLib.h>
+#include <IOKit/hidsystem/IOHIDLib.h>
+#include <IOKit/hid/IOHIDLib.h>
 
 #import <FruitzOfDojo/FruitzOfDojo.h>
 
-#import "quakedef.h"
-#import "in_osx.h"
-#import "sys_osx.h"
-#import "vid_osx.h"
+#include "quakedef.h"
+#include "in_osx.h"
+#include "sys_osx.h"
+#include "vid_osx.h"
 
 //----------------------------------------------------------------------------------------------------------------------------
 

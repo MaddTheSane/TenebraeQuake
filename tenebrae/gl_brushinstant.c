@@ -219,7 +219,7 @@ qboolean R_IsVisibleSurf(msurface_t *surf, brushlightinstant_t *ins)
 	}
 
 	//the normals are flipped when surf_planeback is 1
-	if ( abs(dist) > currentshadowlight->radius)
+	if ( fabsf(dist) > currentshadowlight->radius)
 	{
 		return false;
 	}
@@ -335,7 +335,7 @@ void R_CalcBrushAttenCoords(entity_t *e, brushlightinstant_t *ins) {
 			break;
 		}
 			
-		dist = abs(dist);
+		dist = fabsf(dist);
 		
 		ProjectPlane(ins->lightpos,s,t,nearPt);
 		

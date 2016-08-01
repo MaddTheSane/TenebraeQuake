@@ -13,6 +13,8 @@
 		5592D89E1CE97316006493C1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592D89D1CE97316006493C1 /* Media.xcassets */; };
 		55FE60001D4EC2C600FBBA91 /* FruitzOfDojo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; };
 		55FE60011D4EC2C600FBBA91 /* FruitzOfDojo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		55FE60091D4ECA1E00FBBA91 /* FruitzOfDojo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; };
+		55FE600A1D4ECA1E00FBBA91 /* FruitzOfDojo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D21E7AA1151C374A000D0F05 /* QReadMe.m in Sources */ = {isa = PBXBuildFile; fileRef = D21E7AA0151C374A000D0F05 /* QReadMe.m */; };
 		D21E7AA2151C3768000D0F05 /* TenebraeQuake.help in Resources */ = {isa = PBXBuildFile; fileRef = D278D170151C2FDB00654E30 /* TenebraeQuake.help */; };
 		D278D171151C2FDB00654E30 /* TenebraeQuake.help in Resources */ = {isa = PBXBuildFile; fileRef = D278D170151C2FDB00654E30 /* TenebraeQuake.help */; };
@@ -158,6 +160,13 @@
 			remoteGlobalIDString = 556478231CECEE1000ECD01B;
 			remoteInfo = FruitzOfDojo;
 		};
+		55FE600B1D4ECA1E00FBBA91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 556478231CECEE1000ECD01B;
+			remoteInfo = FruitzOfDojo;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -168,6 +177,17 @@
 			dstSubfolderSpec = 10;
 			files = (
 				55FE60011D4EC2C600FBBA91 /* FruitzOfDojo.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		55FE600D1D4ECA1E00FBBA91 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				55FE600A1D4ECA1E00FBBA91 /* FruitzOfDojo.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,6 +396,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D278D191151C367600654E30 /* Cocoa.framework in Frameworks */,
+				55FE60091D4ECA1E00FBBA91 /* FruitzOfDojo.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -852,10 +873,12 @@
 				D278D18B151C367600654E30 /* Sources */,
 				D278D18C151C367600654E30 /* Frameworks */,
 				D278D18D151C367600654E30 /* Resources */,
+				55FE600D1D4ECA1E00FBBA91 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				55FE600C1D4ECA1E00FBBA91 /* PBXTargetDependency */,
 			);
 			name = "Read Me";
 			productName = "Read Me";
@@ -1087,6 +1110,11 @@
 			name = FruitzOfDojo;
 			targetProxy = 55FE60021D4EC2C600FBBA91 /* PBXContainerItemProxy */;
 		};
+		55FE600C1D4ECA1E00FBBA91 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FruitzOfDojo;
+			targetProxy = 55FE600B1D4ECA1E00FBBA91 /* PBXContainerItemProxy */;
+		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
@@ -1200,6 +1228,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QPrefix.pch;
 				INFOPLIST_FILE = "Resources/Read Me/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake-readme";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
@@ -1214,6 +1243,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = QPrefix.pch;
 				INFOPLIST_FILE = "Resources/Read Me/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.fruitz-of-dojo.tenebraequake-readme";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;

@@ -39,17 +39,17 @@
 //----------------------------------------------------------------------------------------------------------------------------
 
 #import	<AppKit/AppKit.h>
-#import <IOKit/graphics/IOGraphicsTypes.h>
-#import <OpenGL/OpenGL.h>
-#import <OpenGL/gl.h>
-#import <OpenGL/glu.h>
-#import <OpenGL/glext.h>
+#include <IOKit/graphics/IOGraphicsTypes.h>
+#include <OpenGL/OpenGL.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#include <OpenGL/glext.h>
 
-#import	"quakedef.h"
-#import "glATI.h"
-#import "in_osx.h"
-#import "vid_osx.h"
-#import	"sys_osx.h"
+#include "quakedef.h"
+#include "glATI.h"
+#include "in_osx.h"
+#include "vid_osx.h"
+#include "sys_osx.h"
 
 #import "QShared.h"
 

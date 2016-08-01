@@ -10,10 +10,10 @@
 //----------------------------------------------------------------------------------------------------------------------------
 
 #import <Cocoa/Cocoa.h>
-#import <fcntl.h>
-#import <unistd.h>
+#include <fcntl.h>
+#include <unistd.h>
 
-#import "quakedef.h"
+#include "quakedef.h"
 #import "QController.h"
 #import "QArguments.h"
 #import "QShared.h"
@@ -21,9 +21,9 @@
 #import <FruitzOfDojo/FruitzOfDojo.h>
 
 #import "cd_osx.h"
-#import "in_osx.h"
-#import "sys_osx.h"
-#import "vid_osx.h"
+#include "in_osx.h"
+#include "sys_osx.h"
+#include "vid_osx.h"
 
 //----------------------------------------------------------------------------------------------------------------------------
 

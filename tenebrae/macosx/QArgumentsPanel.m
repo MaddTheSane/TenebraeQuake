@@ -98,7 +98,7 @@
     [item setLabel: @"CLI"];
     [item setPaletteLabel: @"CLI"];
     [item setToolTip: @"Set command-line parameters."];
-    [item setImage: [NSImage imageNamed: @"Arguments.icns"]];
+    [item setImage: [NSImage imageNamed: @"Arguments"]];
     
     return item;
 }

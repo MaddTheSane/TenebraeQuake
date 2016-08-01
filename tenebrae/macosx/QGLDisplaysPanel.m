@@ -76,7 +76,7 @@
     [item setLabel: @"Displays"];
     [item setPaletteLabel: @"Displays"];
     [item setToolTip: @"Change display settings."];
-    [item setImage: [NSImage imageNamed: @"Displays.icns"]];
+    [item setImage: [NSImage imageNamed: @"Displays"]];
     
     return item;
 }

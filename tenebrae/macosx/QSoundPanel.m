@@ -58,7 +58,7 @@
     [item setLabel: @"Sound"];
     [item setPaletteLabel: @"Sound"];
     [item setToolTip: @"Change sound settings."];
-    [item setImage: [NSImage imageNamed: @"Sound.icns"]];
+    [item setImage: [NSImage imageNamed: @"Sound"]];
     
     return item;
 }

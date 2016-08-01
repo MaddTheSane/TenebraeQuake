@@ -131,10 +131,6 @@
 		D2C8F15C150D44EE00835FDD /* TenebraeQuake.scriptTerminology in Resources */ = {isa = PBXBuildFile; fileRef = D2C8F150150D44EE00835FDD /* TenebraeQuake.scriptTerminology */; };
 		D2C8F160150D44FC00835FDD /* TenebraeQuake.scriptSuite in Resources */ = {isa = PBXBuildFile; fileRef = D2C8F15E150D44FC00835FDD /* TenebraeQuake.scriptSuite */; };
 		D2C8F162150D45C400835FDD /* ApplicationServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F161150D45C400835FDD /* ApplicationServices.framework */; };
-		D2C8F164150D45D800835FDD /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F163150D45D800835FDD /* AudioToolbox.framework */; };
-		D2C8F166150D45EE00835FDD /* AudioUnit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F165150D45EE00835FDD /* AudioUnit.framework */; };
-		D2C8F168150D460200835FDD /* ForceFeedback.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F167150D460200835FDD /* ForceFeedback.framework */; };
-		D2C8F16A150D461D00835FDD /* IOKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F169150D461D00835FDD /* IOKit.framework */; };
 		D2C8F16C150D462B00835FDD /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2C8F16B150D462B00835FDD /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
@@ -382,12 +378,8 @@
 		D2C8F151150D44EE00835FDD /* English */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptTerminology; name = English; path = Resources/English.lproj/TenebraeQuake.scriptTerminology; sourceTree = "<group>"; };
 		D2C8F15D150D44FC00835FDD /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D2C8F15E150D44FC00835FDD /* TenebraeQuake.scriptSuite */ = {isa = PBXFileReference; lastKnownFileType = text.plist.scriptSuite; path = TenebraeQuake.scriptSuite; sourceTree = "<group>"; };
-		D2C8F161150D45C400835FDD /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = ../../../../../../System/Library/Frameworks/ApplicationServices.framework; sourceTree = "<group>"; };
-		D2C8F163150D45D800835FDD /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = ../../../../../../System/Library/Frameworks/AudioToolbox.framework; sourceTree = "<group>"; };
-		D2C8F165150D45EE00835FDD /* AudioUnit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioUnit.framework; path = ../../../../../../System/Library/Frameworks/AudioUnit.framework; sourceTree = "<group>"; };
-		D2C8F167150D460200835FDD /* ForceFeedback.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ForceFeedback.framework; path = ../../../../../../System/Library/Frameworks/ForceFeedback.framework; sourceTree = "<group>"; };
-		D2C8F169150D461D00835FDD /* IOKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = IOKit.framework; path = ../../../../../../System/Library/Frameworks/IOKit.framework; sourceTree = "<group>"; };
-		D2C8F16B150D462B00835FDD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = ../../../../../../System/Library/Frameworks/OpenGL.framework; sourceTree = "<group>"; };
+		D2C8F161150D45C400835FDD /* ApplicationServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ApplicationServices.framework; path = System/Library/Frameworks/ApplicationServices.framework; sourceTree = SDKROOT; };
+		D2C8F16B150D462B00835FDD /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -407,11 +399,7 @@
 				5556CE031CE9693B00C027F3 /* libz.tbd in Frameworks */,
 				D2C8F089150D3CDC00835FDD /* Cocoa.framework in Frameworks */,
 				D2C8F162150D45C400835FDD /* ApplicationServices.framework in Frameworks */,
-				D2C8F164150D45D800835FDD /* AudioToolbox.framework in Frameworks */,
-				D2C8F166150D45EE00835FDD /* AudioUnit.framework in Frameworks */,
 				55FE60001D4EC2C600FBBA91 /* FruitzOfDojo.framework in Frameworks */,
-				D2C8F168150D460200835FDD /* ForceFeedback.framework in Frameworks */,
-				D2C8F16A150D461D00835FDD /* IOKit.framework in Frameworks */,
 				D2C8F16C150D462B00835FDD /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -762,6 +750,8 @@
 			children = (
 				5556CE021CE9693B00C027F3 /* libz.tbd */,
 				D2C8F088150D3CDC00835FDD /* Cocoa.framework */,
+				D2C8F16B150D462B00835FDD /* OpenGL.framework */,
+				D2C8F161150D45C400835FDD /* ApplicationServices.framework */,
 				D2C8F08A150D3CDC00835FDD /* Other Frameworks */,
 			);
 			name = Frameworks;
@@ -771,14 +761,8 @@
 			isa = PBXGroup;
 			children = (
 				D2C8F08B150D3CDC00835FDD /* AppKit.framework */,
-				D2C8F161150D45C400835FDD /* ApplicationServices.framework */,
-				D2C8F163150D45D800835FDD /* AudioToolbox.framework */,
-				D2C8F165150D45EE00835FDD /* AudioUnit.framework */,
 				D2C8F08C150D3CDC00835FDD /* CoreData.framework */,
-				D2C8F167150D460200835FDD /* ForceFeedback.framework */,
 				D2C8F08D150D3CDC00835FDD /* Foundation.framework */,
-				D2C8F169150D461D00835FDD /* IOKit.framework */,
-				D2C8F16B150D462B00835FDD /* OpenGL.framework */,
 			);
 			name = "Other Frameworks";
 			sourceTree = "<group>";

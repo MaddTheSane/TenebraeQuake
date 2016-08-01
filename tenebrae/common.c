@@ -1670,6 +1670,7 @@ int COM_FindFile (const char *filename, int *handle, FILE **file)
 			//see if the filename is already an absolute path
 			//if it is don't reexpand it
 			//Are absolute paths prefixed with / on mac also???
+            //Well, they are now...
 #if defined(_WIN32)		
 			if (filename[1] != ':') // c:\something
 #else

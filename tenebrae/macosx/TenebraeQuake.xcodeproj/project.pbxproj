@@ -11,6 +11,7 @@
 		5556CE051CE96A3C00C027F3 /* lex_part.l in Sources */ = {isa = PBXBuildFile; fileRef = 5556CE041CE96A3C00C027F3 /* lex_part.l */; };
 		5592D89C1CE972D5006493C1 /* QIcons.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592D89B1CE972D5006493C1 /* QIcons.xcassets */; };
 		5592D89E1CE97316006493C1 /* Media.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5592D89D1CE97316006493C1 /* Media.xcassets */; };
+		5598E3021D4EF9CC00EA2073 /* CGDataProvider+FILEPointer.c in Sources */ = {isa = PBXBuildFile; fileRef = 5598E3011D4EF9CC00EA2073 /* CGDataProvider+FILEPointer.c */; };
 		55FE60001D4EC2C600FBBA91 /* FruitzOfDojo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; };
 		55FE60011D4EC2C600FBBA91 /* FruitzOfDojo.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		55FE60091D4ECA1E00FBBA91 /* FruitzOfDojo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55FE5FFD1D4EC2AE00FBBA91 /* FruitzOfDojo.framework */; };
@@ -195,6 +196,8 @@
 		5556CE041CE96A3C00C027F3 /* lex_part.l */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.lex; path = lex_part.l; sourceTree = "<group>"; };
 		5592D89B1CE972D5006493C1 /* QIcons.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = QIcons.xcassets; sourceTree = "<group>"; };
 		5592D89D1CE97316006493C1 /* Media.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Media.xcassets; sourceTree = "<group>"; };
+		5598E2FF1D4EF9AC00EA2073 /* CGDataProvider+FILEPointer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CGDataProvider+FILEPointer.h"; sourceTree = "<group>"; usesTabs = 1; };
+		5598E3011D4EF9CC00EA2073 /* CGDataProvider+FILEPointer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = "CGDataProvider+FILEPointer.c"; sourceTree = "<group>"; usesTabs = 1; };
 		55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = FruitzOfDojo.xcodeproj; path = FDFramework/FruitzOfDojo.xcodeproj; sourceTree = "<group>"; };
 		D21E7AA0151C374A000D0F05 /* QReadMe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QReadMe.m; sourceTree = "<group>"; };
 		D278D170151C2FDB00654E30 /* TenebraeQuake.help */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TenebraeQuake.help; sourceTree = "<group>"; };
@@ -772,6 +775,8 @@
 			children = (
 				55FE5FF71D4EC2AE00FBBA91 /* FruitzOfDojo.xcodeproj */,
 				D2C8F0B9150D3F4B00835FDD /* Settings */,
+				5598E2FF1D4EF9AC00EA2073 /* CGDataProvider+FILEPointer.h */,
+				5598E3011D4EF9CC00EA2073 /* CGDataProvider+FILEPointer.c */,
 				D2C8F10C150D43D900835FDD /* cd_osx.h */,
 				D2C8F10D150D43D900835FDD /* cd_osx.m */,
 				D2C8F10E150D43D900835FDD /* gl_vidosx.m */,
@@ -1056,6 +1061,7 @@
 				D2C4EC80150D4CA0005D60EF /* gl_refrag.c in Sources */,
 				D2C4EC81150D4CA0005D60EF /* gl_rlight.c in Sources */,
 				D2C4EC82150D4CA0005D60EF /* gl_rmain.c in Sources */,
+				5598E3021D4EF9CC00EA2073 /* CGDataProvider+FILEPointer.c in Sources */,
 				D2C4EC83150D4CA0005D60EF /* gl_rmisc.c in Sources */,
 				D2C4EC84150D4CA0005D60EF /* gl_rsurf.c in Sources */,
 				D2C4EC85150D4CA0005D60EF /* gl_screen.c in Sources */,

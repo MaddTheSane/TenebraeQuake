@@ -43,9 +43,7 @@
 //
 //----------------------------------------------------------------------------------------------------------------------------
 
-#import <AppKit/AppKit.h>
 #import <Cocoa/Cocoa.h>
-#import <Foundation/Foundation.h>
 #include <mach/mach_time.h>
 
 #include <dlfcn.h>
@@ -100,7 +98,7 @@ qboolean			isDedicated;
 //----------------------------------------------------------------------------------------------------------------------------
 
 static const char*  Sys_FixFileNameCase (const char*);
-void                Sys_Warn (char *theWarning, ...);
+void                Sys_Warn (char *theWarning, ...) OS_FORMAT_PRINTF(1, 2);
 double              Sys_DoubleTime (void);
 int                 main (int, const char **);
 
@@ -133,11 +131,11 @@ int	Sys_FileOpenRead (char* pPath, int* pHandle)
 {
     struct stat fileStat = { 0 };
 
-    NSAutoreleasePool* pool = [[NSAutoreleasePool alloc] init];
+    @autoreleasepool {
     
     *pHandle = open (Sys_FixFileNameCase (pPath), O_RDONLY, 0666);
     
-    [pool release];
+    }
     
     if (*pHandle == -1)
     {
@@ -369,9 +367,13 @@ void	Sys_Warn (char* pFormat, ...)
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-void	Sys_Printf (char* pFormat, ...)
+void	Sys_Printf (const char* pFormat, ...)
 {
-    FD_UNUSED (pFormat);
+    va_list     argPtr;
+    
+    va_start (argPtr, pFormat);
+    vprintf(pFormat, argPtr);
+    va_end(argPtr);
 }
 
 //----------------------------------------------------------------------------------------------------------------------------
@@ -468,7 +470,7 @@ double	Sys_DoubleTime (void)
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-void	Sys_DebugLog (char* pPath, char* pFormat, ...)
+void	Sys_DebugLog (const char* pPath, const char* pFormat, ...)
 {
     const int fileDesc = open (pPath, O_WRONLY | O_CREAT | O_APPEND, 0666);
     

@@ -302,14 +302,14 @@ SV_BroadcastPrintf
 Sends text to all active clients
 =================
 */
-void SV_BroadcastPrintf (char *fmt, ...)
+void SV_BroadcastPrintf (const char *fmt, ...)
 {
 	va_list		argptr;
 	char		string[1024];
 	int			i;
 	
-	va_start (argptr,fmt);
-	vsprintf (string, fmt,argptr);
+	va_start (argptr, fmt);
+	vsprintf (string, fmt, argptr);
 	va_end (argptr);
 	
 	for (i=0 ; i<svs.maxclients ; i++)

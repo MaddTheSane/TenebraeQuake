@@ -649,7 +649,7 @@ void	VID_Init (unsigned char* pPalette)
     // finish up initialization:
     VID_CheckGamma (pPalette);
     VID_SetPalette (pPalette);
-    Con_SafePrintf ("Video mode %dx%d initialized.\n", gGLDisplayWidth, gGLDisplayHeight);
+    Con_SafePrintf ("Video mode %lux%lu initialized.\n", (unsigned long)gGLDisplayWidth, (unsigned long)gGLDisplayHeight);
     
     vid.recalc_refdef = 1;
 }

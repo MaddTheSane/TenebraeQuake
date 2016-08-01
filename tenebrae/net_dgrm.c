@@ -1356,7 +1356,7 @@ static qsocket_t *_Datagram_Connect (char *host)
 	if (ret == CCREP_REJECT)
 	{
 		reason = MSG_ReadString();
-		Con_Printf(reason);
+		Con_Printf("%s", reason);
 		Q_strncpy(m_return_reason, reason, 31);
 		goto ErrorReturn;
 	}

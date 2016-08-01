@@ -34,13 +34,13 @@ void Con_CheckResize (void);
 void Con_Init (void);
 void Con_DrawConsole (int lines, qboolean drawinput);
 void Con_Print (char *txt);
-void Con_Printf (const char *fmt, ...);
-void Con_DPrintf (char *fmt, ...);
-void Con_SafePrintf (char *fmt, ...);
+void Con_Printf (const char *fmt, ...) __printflike(1, 2);
+void Con_DPrintf (const char *fmt, ...) __printflike(1, 2);
+void Con_SafePrintf (const char *fmt, ...) __printflike(1, 2);
 void Con_Clear_f (void);
 void Con_DrawNotify (void);
 void Con_ClearNotify (void);
 void Con_ToggleConsole_f (void);
 
-void Con_NotifyBox (char *text);	// during startup for sound / cd warnings
+void Con_NotifyBox (const char *text);	// during startup for sound / cd warnings
 

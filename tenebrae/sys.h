@@ -41,15 +41,19 @@ void Sys_mkdir (char *path);
 //
 void Sys_MakeCodeWriteable (unsigned long startaddr, unsigned long length);
 
+#ifndef __printflike
+#define __printflike(x, y)
+#endif
+
 //
 // system IO
 //
-void Sys_DebugLog(char *file, char *fmt, ...);
+void Sys_DebugLog(const char *file, const char *fmt, ...) __printflike(2, 3);
 
-void Sys_Error (const char *error, ...);
+void Sys_Error (const char *error, ...) __printflike(1, 2);
 // an error will cause the entire program to exit
 
-void Sys_Printf (char *fmt, ...);
+void Sys_Printf (const char *fmt, ...) __printflike(1, 2);
 // send text to the console
 
 void Sys_Quit (void);

@@ -341,7 +341,7 @@ void	CD_f (void)
             {
                 Con_Print ("Audio files");
             }
-            Con_Printf (" found. %d tracks.\n", numTracks);
+            Con_Printf (" found. %lu tracks.\n", (unsigned long)numTracks);
         }
         
 		return;
@@ -433,11 +433,11 @@ void	CD_f (void)
             
             if ([sCDAudio isPlaying] == YES)
             {
-                Con_Printf ("Playing track %d of %d (\"%s\").\n", sCDAudioTrack, numTracks, mountPath);
+                Con_Printf ("Playing track %lu of %lu (\"%s\").\n", (unsigned long)sCDAudioTrack, (unsigned long)numTracks, mountPath);
             }
             else
             {
-                Con_Printf ("Not playing. Tracks: %d (\"%s\").\n", numTracks, mountPath);
+                Con_Printf ("Not playing. Tracks: %lu (\"%s\").\n", (unsigned long)numTracks, mountPath);
             }
  
             Con_Printf ("CD volume is: %.2f.\n", bgmvolume.value);

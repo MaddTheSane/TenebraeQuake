@@ -1,0 +1,19 @@
+* text=auto
+*.m text diff=objc eol=lf
+*.h text diff=objc
+*.c text
+*.cpp text
+*.swift text diff=swift eol=lf
+
+*.pbxproj text eol=lf
+
+*.sln text eol=crlf
+*.dsp text eol=crlf
+*.dsw text eol=crlf
+*.rc text eol=crlf
+*.vcproj text eol=crlf
+
+*.pdf binary
+*.gif binary
+*.jpg binary
+*.png binary

@@ -107,11 +107,11 @@ R_InitParticleEffects
 void R_AddEffectsScript(const char *filename) {
 
 //	FILE *fin;
-    int token, var, i;
+    int token, var = 0, i;
     ParticleEffect_t *effect;
 	char *buffer;
 	//char	newname[256];
-	char* str;
+	char* str = "";
 
 	buffer = (char*) COM_LoadTempFile (filename);
 

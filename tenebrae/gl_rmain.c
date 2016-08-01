@@ -2900,7 +2900,7 @@ r_refdef must be set before the first call
 */
 void R_RenderView (void)
 {
-	float oldfogen;
+	float oldfogen = 0.0;
 	int	viewcont;
 
 	if (r_norefresh.value)

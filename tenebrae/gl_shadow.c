@@ -630,7 +630,7 @@ void R_MarkShadowCasting (shadowlight_t *light, mnode_t *node)
 float SphereInFrustum( vec3_t o, float radius )
 {
    int p;
-   float d;
+   float d = 0.0;
 
    for( p = 0; p < 6; p++ )
    {

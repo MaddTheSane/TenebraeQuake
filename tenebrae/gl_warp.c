@@ -22,14 +22,10 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 //#define NO_PNG
 #ifndef NO_PNG
 #if defined (__APPLE__) || defined (MACOSX)
-#define NO_PNG
+#include "png.h"
 #else
 #include <png.h>
 #endif // __APPLE__ || MACOSX
-#endif
-#if defined (__APPLE__) || defined (MACOSX)
-#include <CoreGraphics/CoreGraphics.h>
-#include "CGDataProvider+FILEPointer.h"
 #endif
 
 #include "quakedef.h"
@@ -689,7 +685,7 @@ int LoadTexture(char* filename, int size)
 	png_infop info_ptr;
 	png_structp png_ptr;
         char* mem;
-        unsigned long width, height;
+        png_uint_32 width, height;
         
 	int bit_depth;
 	int color_type;
@@ -718,7 +714,7 @@ int LoadTexture(char* filename, int size)
             png_set_strip_16(png_ptr);
         
         if ( color_type == PNG_COLOR_TYPE_GRAY && bit_depth < 8 )
-            png_set_gray_1_2_4_to_8(png_ptr);
+            png_set_expand_gray_1_2_4_to_8(png_ptr);
 
         png_set_gamma(png_ptr, 1.0, 1.0);
 
@@ -768,40 +764,7 @@ int LoadTexture(char* filename, int size)
 	return 1;
     }
 #elif defined (__APPLE__) || defined (MACOSX)
-    tmp[0] = 'p';
-    tmp[1] = 'n';
-    tmp[2] = 'g';
-    COM_FOpenFile (argh, &f);
-    if ( f )
-    {
-        char* mem;
-        unsigned long width, height;
-        
-        Con_DPrintf("Loading %s\n", argh);
-        
-        CGDataProviderRef dat = CGDataProviderCreateSequential(f, &FILECallback);
-        CGImageRef img = CGImageCreateWithPNGDataProvider(dat, NULL, false, kCGRenderingIntentDefault);
-        CGDataProviderRelease(dat);
-        width = CGImageGetWidth(img);
-        height = CGImageGetHeight(img);
-        CGContextRef bitmapContext = CGBitmapContextCreate(nil, width, height, 8, width * 4, getGenericRGBColorSpace(), kCGBitmapByteOrderDefault | kCGImageAlphaLast);
-        CGContextClearRect(bitmapContext, CGRectMake(0, 0, width, height));
-        CGContextDrawImage(bitmapContext, CGRectMake(0, 0, width, height), img);
-        CGImageRelease(img);
-        img = CGBitmapContextCreateImage(bitmapContext);
-        CGContextRelease(bitmapContext);
-        targa_header.width = width;
-        targa_header.height = height;
-        mem = calloc(width, height * 4);
-        CFDataRef rawData = CGDataProviderCopyData(CGImageGetDataProvider(img));
-        CGImageRelease(img);
-        CFDataGetBytes(rawData, CFRangeMake(0, width * height * 4), (UInt8 *)mem);
-        CFRelease(rawData);
-        targa_rgba = (byte*) mem;
-
-        fclose(f);
-        return 1;
-    }
+    //TODO: CoreGraphics implementation
 #endif
 
     tmp[0] = 't';
@@ -837,7 +800,7 @@ int LoadTextureInPlace(char* filename, int size, byte* mem, int* width, int* hei
 	png_structp png_ptr;
 	int bit_depth;
 	int color_type;
-        unsigned long mywidth, myheight;
+        png_uint_32 mywidth, myheight;
         
 	unsigned char** rows;
         int i;
@@ -865,7 +828,7 @@ int LoadTextureInPlace(char* filename, int size, byte* mem, int* width, int* hei
             png_set_strip_16(png_ptr);
         
         if ( color_type == PNG_COLOR_TYPE_GRAY && bit_depth < 8 )
-            png_set_gray_1_2_4_to_8(png_ptr);
+            png_set_expand_gray_1_2_4_to_8(png_ptr);
 
         png_set_gamma(png_ptr, 1.0, 1.0);
 
@@ -912,54 +875,7 @@ int LoadTextureInPlace(char* filename, int size, byte* mem, int* width, int* hei
 	return 1;
     }
 #elif defined (__APPLE__) || defined (MACOSX)
-    tmp[0] = 'p';
-    tmp[1] = 'n';
-    tmp[2] = 'g';
-    COM_FOpenFile (argh, &f);
-    if ( f )
-    {
-        unsigned long imgWidth, imgHeight;
-        
-        Con_DPrintf("Loading %s\n", argh);
-        
-        CGDataProviderRef dat = CGDataProviderCreateSequential(f, &FILECallback);
-        CGImageRef img = CGImageCreateWithPNGDataProvider(dat, NULL, false, kCGRenderingIntentDefault);
-        CGDataProviderRelease(dat);
-        imgWidth = CGImageGetWidth(img);
-        imgHeight = CGImageGetHeight(img);
-        CFIndex rowSize = imgWidth;
-        CGColorSpaceRef colorSpace;
-        if (size == 4) {
-            colorSpace = getGenericRGBColorSpace();
-            rowSize *= 4;
-        } else {
-            colorSpace = getGenericGrayColorSpace();
-        }
-        
-        CGContextRef bitmapContext = CGBitmapContextCreate(nil, imgWidth, imgHeight, 8, rowSize, colorSpace, kCGBitmapByteOrderDefault | (size == 4) ? kCGImageAlphaLast : kCGImageAlphaNone);
-        if (size == 4) {
-        CGContextClearRect(bitmapContext, CGRectMake(0, 0, imgWidth, imgHeight));
-        } else {
-            CGColorRef color = CGColorCreateGenericGray(0, 1);
-            CGContextSetFillColorWithColor(bitmapContext, color);
-            CGColorRelease(color);
-            CGContextFillRect(bitmapContext, CGRectMake(0, 0, imgWidth, imgHeight));
-        }
-        CGContextDrawImage(bitmapContext, CGRectMake(0, 0, imgWidth, imgHeight), img);
-        CGImageRelease(img);
-        img = CGBitmapContextCreateImage(bitmapContext);
-        CGContextRelease(bitmapContext);
-        *width = (int)imgWidth;
-        *height = (int)imgHeight;
-        CFDataRef rawData = CGDataProviderCopyData(CGImageGetDataProvider(img));
-        CGImageRelease(img);
-        CFDataGetBytes(rawData, CFRangeMake(0, rowSize * imgHeight), (UInt8 *)mem);
-        CFRelease(rawData);
-        
-        fclose(f);
-        return 1;
-    }
-
+    //TODO: CoreGraphics implementation
 #endif
     tmp[0] = 't';
     tmp[1] = 'g';
@@ -1458,6 +1374,8 @@ int EasyTgaLoad(char *filename)
         int color_type;
         unsigned char** rows;
         int i;
+        png_uint_32 pngWidth, pngHeight;
+
 //        png_color_16 background = {0, 0, 0};
 //        png_color_16p image_background;
 
@@ -1469,8 +1387,10 @@ int EasyTgaLoad(char *filename)
         png_set_sig_bytes(png_ptr, 0);
 	
 	png_read_info(png_ptr, info_ptr);
-	png_get_IHDR(png_ptr, info_ptr, &width, &height,
+	png_get_IHDR(png_ptr, info_ptr, &pngWidth, &pngHeight,
 		     &bit_depth, &color_type, 0, 0, 0);
+        width = pngWidth;
+        height = pngHeight;
 	
 	
 	// Allocate memory and get data there
@@ -1481,7 +1401,7 @@ int EasyTgaLoad(char *filename)
             png_set_strip_16(png_ptr);
         
         if ( color_type == PNG_COLOR_TYPE_GRAY && bit_depth < 8 )
-            png_set_gray_1_2_4_to_8(png_ptr);
+            png_set_expand_gray_1_2_4_to_8(png_ptr);
 
         png_set_gamma(png_ptr, 1.0, 1.0);
 
@@ -1512,35 +1432,7 @@ int EasyTgaLoad(char *filename)
     }
     else
 #elif defined (__APPLE__) || defined (MACOSX)
-    tmp[0] = 'p';
-    tmp[1] = 'n';
-    tmp[2] = 'g';
-    COM_FOpenFile (argh, &f);
-    if ( f )
-    {
-        Con_DPrintf("Loading %s\n", argh);
-        
-        CGDataProviderRef dat = CGDataProviderCreateSequential(f, &FILECallback);
-        CGImageRef img = CGImageCreateWithPNGDataProvider(dat, NULL, false, kCGRenderingIntentDefault);
-        CGDataProviderRelease(dat);
-        width = CGImageGetWidth(img);
-        height = CGImageGetHeight(img);
-        CGContextRef bitmapContext = CGBitmapContextCreate(nil, width, height, 8, width * 4, getGenericRGBColorSpace(), kCGBitmapByteOrderDefault | kCGImageAlphaLast);
-        CGContextClearRect(bitmapContext, CGRectMake(0, 0, width, height));
-        CGContextDrawImage(bitmapContext, CGRectMake(0, 0, width, height), img);
-        CGImageRelease(img);
-        img = CGBitmapContextCreateImage(bitmapContext);
-        CGContextRelease(bitmapContext);
-        mem = calloc(width, height * 4);
-        CFDataRef rawData = CGDataProviderCopyData(CGImageGetDataProvider(img));
-        CGImageRelease(img);
-        CFDataGetBytes(rawData, CFRangeMake(0, width * height * 4), (UInt8 *)mem);
-        CFRelease(rawData);
-        
-        fclose(f);
-        return 1;
-    }
-
+//TODO: CoreGraphics implementation
 #endif
     {
         tmp[0] = 't';

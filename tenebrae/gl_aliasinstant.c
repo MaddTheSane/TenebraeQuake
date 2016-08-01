@@ -504,7 +504,7 @@ void R_SetupInstantForFrame(entity_t *e, qboolean forcevis)
      alias3data_t *data;
      aliashdr_t *paliashdr;
      aliasframeinstant_t *aliasframeinstant;
-     aliasframeinstant_t *nextframeinstant;
+     aliasframeinstant_t *nextframeinstant = NULL;
      aliasframeinstant_t *prevframeinstant;
      int numsurf,maxnumsurf;
 

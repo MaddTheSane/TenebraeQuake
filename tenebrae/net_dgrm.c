@@ -1222,7 +1222,7 @@ static qsocket_t *_Datagram_Connect (char *host)
 	struct qsockaddr readaddr;
 	qsocket_t	*sock;
 	int			newsock;
-	int			ret;
+	int			ret = 0;
 	int			reps;
 	double		start_time;
 	int			control;

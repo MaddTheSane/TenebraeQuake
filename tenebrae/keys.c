@@ -205,7 +205,7 @@ Interactive line editing and console scrollback
 */
 void Key_Console (int key)
 {
-	char	*cmd;
+	char	*cmd = NULL;
 #if defined(_WIN32)
 	//START - Console Paste - Eradicator
 	char	*s;

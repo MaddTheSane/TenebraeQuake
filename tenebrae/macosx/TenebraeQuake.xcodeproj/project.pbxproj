@@ -1463,6 +1463,7 @@
 				55AEC3DF1D4FEB1000CE54B2 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D278D1A6151C367600654E30 /* Build configuration list for PBXNativeTarget "Read Me" */ = {
 			isa = XCConfigurationList;

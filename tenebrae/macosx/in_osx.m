@@ -166,7 +166,7 @@ void 	IN_Shutdown (void)
         }
     }
     
-    [[FDHIDManager sharedHIDManager] release];
+    CFRelease((__bridge CFTypeRef)[FDHIDManager sharedHIDManager]);
 }
 
 //----------------------------------------------------------------------------------------------------------------------------

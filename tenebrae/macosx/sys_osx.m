@@ -3,9 +3,9 @@
 // "sys_osx.m" - MacOS X system functions.
 //
 // Written by:	Axel 'awe' Wefers			[mailto:awe@fruitz-of-dojo.de].
-//				©2001-2012 Fruitz Of Dojo 	[http://www.fruitz-of-dojo.de].
+//				Â©2001-2012 Fruitz Of Dojo 	[http://www.fruitz-of-dojo.de].
 //
-// Quakeª is copyrighted by id software	[http://www.idsoftware.com].
+// Quakeâ„¢ is copyrighted by id software	[http://www.idsoftware.com].
 //
 // Version History:
 // v1.2.0: Rewrote support for case sensitive file systems.
@@ -35,7 +35,7 @@
 //	       Reenabled keyboard repeat and mousescaling.
 //         Some internal changes.
 // v1.0.1: Added support for GLQuake.
-//	       Obscure characters within the base pathname [like 'Ä'...] are now allowed.
+//	       Obscure characters within the base pathname [like 'Æ’'...] are now allowed.
 //	       Better support for case sensitive file systems.
 //	       FIX: "mkdir" commmand [for QuakeWorld].
 //	       FIX: The "id1" folder had to be lower case. Can now be upper or lower case.
@@ -85,10 +85,10 @@
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-typedef struct	{
-    NSString *					filter;
-    NSString *					path;
-    NSDirectoryEnumerator *		enumerator;
+typedef struct  {
+    CFStringRef     filter;
+    CFStringRef     path;
+    CFTypeRef       enumerator;
 } sys_findenum_t;
 
 //----------------------------------------------------------------------------------------------------------------------------
@@ -231,24 +231,23 @@ dirdata_t *	Sys_Findfirst (char* thePath, char* pFilter, dirdata_t* pDirData)
     dirdata_t *				pFirstDirData   = NULL;
     NSString *				path			= nil;
 	NSString*               filterUpper     = nil;
-	NSString*				file            = nil;
     NSDirectoryEnumerator*	dirEnum         = nil;
     
     path        = [[NSFileManager defaultManager] stringWithFileSystemRepresentation: thePath length: strlen(thePath)];
     filterUpper = [[[NSString stringWithCString: pFilter encoding: NSASCIIStringEncoding] pathExtension] uppercaseString];
     dirEnum     = [[NSFileManager defaultManager] enumeratorAtPath: path];
     
-    while ((file = [dirEnum nextObject]) != nil)
+    for (NSString *file in dirEnum)
     {
         // does the file match our extension filter?
         if ([[[file pathExtension] uppercaseString] isEqualToString: filterUpper])
         {
-            sys_findenum_t *	pInternalData = (sys_findenum_t *) Z_Malloc (sizeof (sys_findenum_t));
+            sys_findenum_t *    pInternalData = (sys_findenum_t *) Z_Malloc (sizeof (sys_findenum_t));
             
             // prepare the internal data:
-            pInternalData->path         = [path retain];
-            pInternalData->filter		= [filterUpper retain];
-            pInternalData->enumerator	= [dirEnum retain];
+            pInternalData->path         = CFBridgingRetain([path copy]);
+            pInternalData->filter       = CFBridgingRetain([filterUpper copy]);
+            pInternalData->enumerator   = CFBridgingRetain(dirEnum);
             pDirData->internal          = pInternalData;
             
             [[path stringByAppendingPathComponent: file] getFileSystemRepresentation: pDirData->entry
@@ -274,11 +273,11 @@ dirdata_t*	Sys_Findnext (dirdata_t* pDirData)
         sys_findenum_t* pInternalData  = pDirData->internal;
         NSString*		pFile          = nil;
         
-        while ((pFile = [pInternalData->enumerator nextObject]) != NULL)
+        for (pFile in (__bridge NSDirectoryEnumerator*)pInternalData->enumerator)
         {
-            if ([[[pFile pathExtension] uppercaseString] isEqualToString: pInternalData->filter])
+            if ([[[pFile pathExtension] uppercaseString] isEqualToString: (__bridge NSString*)pInternalData->filter])
             {
-                pFile = [pInternalData->path stringByAppendingPathComponent: pFile];
+                pFile = [(__bridge NSString*)pInternalData->path stringByAppendingPathComponent: pFile];
                 
                 [pFile getFileSystemRepresentation: pDirData->entry maxLength: MAX_OSPATH];
 
@@ -289,9 +288,9 @@ dirdata_t*	Sys_Findnext (dirdata_t* pDirData)
         
         if ((pNextDirData == NULL) && (pInternalData != NULL))
         {
-            [pInternalData->enumerator release];
-            [pInternalData->filter release];
-            [pInternalData->path release];
+            CFRelease(pInternalData->enumerator);
+            CFRelease(pInternalData->filter);
+            CFRelease(pInternalData->path);
             
             Z_Free (pInternalData);
         }
@@ -512,15 +511,15 @@ char*	Sys_GetClipboardData (void)
 void	Sys_SendKeyEvents (void)
 {
     // will only be called if in modal loop
-    NSAutoreleasePool*  pool    = [[NSAutoreleasePool alloc] init];
+    @autoreleasepool {
     NSEvent*            event   = [NSApp nextEventMatchingMask: NSAnyEventMask
                                                      untilDate: [NSDate distantPast]
                                                         inMode: NSDefaultRunLoopMode
                                                        dequeue: YES];
     
     [NSApp sendEvent: event];
-    [pool release];
-
+    }
+    
     IN_SendKeyEvents();
 }
 
@@ -528,11 +527,11 @@ void	Sys_SendKeyEvents (void)
 
 int	main (int argc, const char** pArgv)
 {
-    NSAutoreleasePool *	pool        = [[NSAutoreleasePool alloc] init];
+    @autoreleasepool {
     NSUserDefaults *	defaults    = [NSUserDefaults standardUserDefaults];
 
-    [defaults registerDefaults: [NSDictionary dictionaryWithObject: @"YES" forKey: @"AppleDockIconEnabled"]];
-    [pool release];
+    [defaults registerDefaults: [NSDictionary dictionaryWithObject: @YES forKey: @"AppleDockIconEnabled"]];
+    }
 
     return NSApplicationMain (argc, pArgv);
 }

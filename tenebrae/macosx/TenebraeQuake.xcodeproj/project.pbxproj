@@ -112,14 +112,14 @@
 		D2C8F10B150D437C00835FDD /* QSoundPanel.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F105150D437C00835FDD /* QSoundPanel.m */; };
 		D2C8F121150D43D900835FDD /* cd_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F10D150D43D900835FDD /* cd_osx.m */; };
 		D2C8F122150D43D900835FDD /* gl_vidosx.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F10E150D43D900835FDD /* gl_vidosx.m */; };
-		D2C8F123150D43D900835FDD /* in_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F110150D43D900835FDD /* in_osx.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D2C8F123150D43D900835FDD /* in_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F110150D43D900835FDD /* in_osx.m */; };
 		D2C8F124150D43D900835FDD /* QApplication.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F112150D43D900835FDD /* QApplication.m */; };
 		D2C8F125150D43D900835FDD /* QArguments.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F114150D43D900835FDD /* QArguments.m */; };
 		D2C8F126150D43D900835FDD /* QController.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F116150D43D900835FDD /* QController.m */; };
 		D2C8F127150D43D900835FDD /* QMediaScan.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F118150D43D900835FDD /* QMediaScan.m */; };
 		D2C8F128150D43D900835FDD /* QSettingsWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F11B150D43D900835FDD /* QSettingsWindow.m */; };
 		D2C8F129150D43D900835FDD /* snd_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F11D150D43D900835FDD /* snd_osx.m */; };
-		D2C8F12A150D43D900835FDD /* sys_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F11F150D43D900835FDD /* sys_osx.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D2C8F12A150D43D900835FDD /* sys_osx.m in Sources */ = {isa = PBXBuildFile; fileRef = D2C8F11F150D43D900835FDD /* sys_osx.m */; };
 		D2C8F152150D44EE00835FDD /* AboutPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8F13C150D44EE00835FDD /* AboutPanel.xib */; };
 		D2C8F153150D44EE00835FDD /* ArgumentEdit.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8F13E150D44EE00835FDD /* ArgumentEdit.xib */; };
 		D2C8F154150D44EE00835FDD /* ArgumentsPanel.xib in Resources */ = {isa = PBXBuildFile; fileRef = D2C8F140150D44EE00835FDD /* ArgumentsPanel.xib */; };

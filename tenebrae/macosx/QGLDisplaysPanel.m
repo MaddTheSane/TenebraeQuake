@@ -85,20 +85,17 @@
 
 - (void) buildDisplayList
 {
-    NSString*   key = [[NSString alloc] init];
-
     [mDisplayPopUp removeAllItems];
     
     for (FDDisplay* display in [FDDisplay displays])
     {
-        NSMenuItem* item = [[NSMenuItem alloc] initWithTitle: [display description] action: nil keyEquivalent: key];
+        NSMenuItem* item = [[NSMenuItem alloc] initWithTitle: [display description] action: nil keyEquivalent: @""];
         
         [item setRepresentedObject: display];
-        [[mDisplayPopUp menu] addItem: [item autorelease]];
+        [[mDisplayPopUp menu] addItem: item];
     }
     
     [mDisplayPopUp selectItemAtIndex: 0];
-    [key release];
 }
 
 //----------------------------------------------------------------------------------------------------------------------------
@@ -106,7 +103,6 @@
 - (void) buildDisplayModeList
 {
     const NSInteger     bitsPerPixel    = [mColorsPopUp selectedTag];
-    NSString*           key             = [[[NSString alloc] init] autorelease];
     FDDisplay*          display         = [[FDDisplay displays] objectAtIndex: [mDisplayPopUp indexOfSelectedItem]];
     FDDisplayMode*      displayModeOld  = [[mModePopUp itemAtIndex: [mModePopUp indexOfSelectedItem]] representedObject];
     
@@ -117,10 +113,10 @@
         if ([displayMode bitsPerPixel] == bitsPerPixel)
         {
             NSString*   description = [displayMode description];
-            NSMenuItem* item        = [[NSMenuItem alloc] initWithTitle: description action: nil keyEquivalent: key];
+            NSMenuItem* item        = [[NSMenuItem alloc] initWithTitle: description action: nil keyEquivalent: @""];
             
             [item setRepresentedObject: displayMode];
-            [[mModePopUp menu] addItem: [item autorelease]];
+            [[mModePopUp menu] addItem: item];
             
             if ([[displayModeOld description] isEqualToString: description])
             {

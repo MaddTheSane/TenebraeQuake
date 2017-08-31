@@ -134,7 +134,7 @@ static QArgumentDesc    sQArguments[] =
         {
             NSString*   title = [NSString stringWithCString: pArgument->mpName encoding: NSASCIIStringEncoding];
             
-            item = [[[NSMenuItem alloc] initWithTitle: title action: nil keyEquivalent: [NSString string]] autorelease];
+            item = [[NSMenuItem alloc] initWithTitle: title action: nil keyEquivalent: @""];
             
             [item setTag: i];
             [item setTarget: self];

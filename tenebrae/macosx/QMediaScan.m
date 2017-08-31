@@ -44,8 +44,7 @@
     
 	if (self != nil)
 	{
-        [self release];
-        self = nil;
+        return nil;
     }
     
     return self;
@@ -60,7 +59,7 @@
 	if (self != nil)
 	{
         mStopConditionLock  = [[NSConditionLock alloc] initWithCondition: 0];
-        mFolder             = [folder retain];
+        mFolder             = [folder copy];
         mObserver           = observer;
         mSelector           = selector;
         
@@ -108,11 +107,6 @@
 - (void) dealloc
 {
     [[NSDistributedNotificationCenter defaultCenter] removeObserver: self];
-    
-    [mFolder release];
-    [mStopConditionLock release];
-    
-    [super dealloc];
 }
 
 //----------------------------------------------------------------------------------------------------------------------------
@@ -135,7 +129,7 @@
         [mObserver performSelector: mSelector withObject: nil];
     }
     
-    [self autorelease];
+    CFAutorelease((__bridge CFTypeRef)(self));
 }
 
 //----------------------------------------------------------------------------------------------------------------------------

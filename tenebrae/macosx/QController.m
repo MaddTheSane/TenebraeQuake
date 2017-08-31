@@ -76,16 +76,6 @@ extern void     M_Menu_Quit_f (void);
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-- (void) dealloc
-{
-    [mSettingsWindow release];
-    [mRequestedCommands release];
-    
-    [super dealloc];
-}
-
-//----------------------------------------------------------------------------------------------------------------------------
-
 - (BOOL) application: (NSApplication *) sender openFile: (NSString *) filePath
 {
     FD_UNUSED (sender);
@@ -200,7 +190,6 @@ extern void     M_Menu_Quit_f (void);
 {
     FD_UNUSED (notification);
     
-    [mSettingsWindow release];
     mSettingsWindow = nil;
     
     [[FDPreferences sharedPrefs] synchronize];
@@ -348,8 +337,8 @@ extern void     M_Menu_Quit_f (void);
     
     while (!success)
     {
-        NSAutoreleasePool*  pool        = [[NSAutoreleasePool alloc] init];
-		NSOpenPanel*        openPanel   = [[[NSOpenPanel alloc] init] autorelease];
+        @autoreleasepool {
+		NSOpenPanel*        openPanel   = [[NSOpenPanel alloc] init];
         
 		[openPanel setAllowsMultipleSelection: NO];
 		[openPanel setCanChooseFiles: NO];
@@ -364,7 +353,7 @@ extern void     M_Menu_Quit_f (void);
         
         success = [self validateIdDirectory: [[openPanel directoryURL] path]];
 		
-		[pool release];
+        }
         
         if (!success)
         {

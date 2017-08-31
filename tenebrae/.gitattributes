@@ -19,3 +19,4 @@ net_dgrm.c eol=lf
 net_udp.c eol=lf
 quakedef.h eol=lf
 snd_dma.c eol=lf
+*.s eol=crlf

@@ -341,7 +341,7 @@ void	Sys_Error (const char* pFormat, ...)
     va_end (argPtr);
 
     Host_Shutdown();
-    [[NSApp delegate] setHostInitialized: NO];
+    [(QController*)[NSApp delegate] setHostInitialized: NO];
     
     NSString* msg = [NSString stringWithCString: buffer encoding: NSASCIIStringEncoding];
     
@@ -394,7 +394,7 @@ void	Sys_Quit (void)
 
     // shutdown host:
     Host_Shutdown ();
-    [[NSApp delegate] setHostInitialized: NO];
+    [(QController*)[NSApp delegate] setHostInitialized: NO];
     fcntl (0, F_SETFL, fcntl (0, F_GETFL, 0) & ~FNDELAY);
     fflush (stdout);
 

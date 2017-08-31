@@ -1,8 +1,8 @@
 * text=auto
 *.m text diff=objc eol=lf
-*.h text diff=objc
-*.c text
-*.cpp text
+*.h text diff=objc eol=auto
+*.c text eol=auto
+*.cpp text eol=auto
 *.swift text diff=swift eol=lf
 
 *.pbxproj text eol=lf

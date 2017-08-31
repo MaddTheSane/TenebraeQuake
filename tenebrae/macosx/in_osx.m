@@ -83,7 +83,7 @@ static void                     IN_Toggle_AuxLook_f (void);
 static void                     IN_Force_CenterView_f (void);
 static void                     IN_MouseMove (usercmd_t *);
 static void                     IN_JoyMove (usercmd_t *cmd);
-static void                     IN_UpdateActuators ();
+static void                     IN_UpdateActuators (void);
 
 //----------------------------------------------------------------------------------------------------------------------------
 

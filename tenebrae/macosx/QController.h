@@ -16,7 +16,7 @@
 
 //----------------------------------------------------------------------------------------------------------------------------
 
-@interface QController : NSObject
+@interface QController : NSObject <NSApplicationDelegate>
 {
     QSettingsWindow*                mSettingsWindow;
     QMediaScan*                     mMediaScan;

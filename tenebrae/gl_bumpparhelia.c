@@ -1405,7 +1405,7 @@ void R_DrawAliasFrameParheliaDiffuse (aliashdr_t *paliashdr,
     //glDrawElements(GL_TRIANGLES,paliashdr->numtris*3,GL_UNSIGNED_INT,indecies);
     glDrawElements(GL_TRIANGLES,linstant->numtris*3,GL_UNSIGNED_INT,&linstant->indecies[0]);
 
-    if (sh_noshadowpopping.value && 0)
+    if (sh_noshadowpopping.value && /* DISABLES CODE */ (0))
     {
 	glStencilFunc(GL_LEQUAL, 1, 0xffffffff);
 	glDrawElements(GL_TRIANGLES,(paliashdr->numtris*3)-(linstant->numtris*3),GL_UNSIGNED_INT,&linstant->indecies[linstant->numtris*3]);
@@ -1459,7 +1459,7 @@ void R_DrawAliasFrameParheliaSpecular (aliashdr_t *paliashdr,
     glEnableClientState(GL_TEXTURE_COORD_ARRAY);
 
     //to to correct self shadowing on alias models send the light vectors an extra time...
-    if (sh_noshadowpopping.value && 0)
+    if (sh_noshadowpopping.value && /* DISABLES CODE */ (0))
     {
 	qglClientActiveTextureARB(GL_TEXTURE2_ARB);
 	glTexCoordPointer(3, GL_FLOAT, 0, linstant->tslights);
@@ -1468,7 +1468,7 @@ void R_DrawAliasFrameParheliaSpecular (aliashdr_t *paliashdr,
 
     glDrawElements(GL_TRIANGLES,linstant->numtris*3,GL_UNSIGNED_INT,&linstant->indecies[0]);
 
-    if (sh_noshadowpopping.value && 0)
+    if (sh_noshadowpopping.value && /* DISABLES CODE */ (0))
     {
 	glStencilFunc(GL_LEQUAL, 1, 0xffffffff);
 	//Con_Printf("%i backfacing tris\n",(paliashdr->numtris*3)-(linstant->numtris*3));

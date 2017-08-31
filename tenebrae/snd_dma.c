@@ -49,7 +49,7 @@ void checkerror()
 void S_Play(void);
 void S_PlayVol(void);
 void S_SoundList(void);
-void S_Update_();
+void S_Update_(void);
 void S_StopAllSounds(qboolean clear);
 void S_StopAllSoundsC(void);
 

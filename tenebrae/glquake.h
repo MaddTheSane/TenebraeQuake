@@ -1438,7 +1438,7 @@ void        R_DrawSkyBox (void);
 void		R_DrawSkyChain (msurface_t *s);
 void		R_DrawSpriteModelWV (entity_t *e);
 void		R_DrawWaterSurfaces (void);
-void		R_DrawWorldBumped (/* shadowlight_t *l */);
+void		R_DrawWorldBumped (/* shadowlight_t *l */void);
 void		R_DrawWorldBumpedGEN (void);
 void 		R_DrawWorldBumpedGF (void);
 void		R_DrawWorldBumpedGF3 (void);

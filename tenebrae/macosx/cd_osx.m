@@ -324,7 +324,7 @@ void	CD_f (void)
     {
         CDAudio_Stop ();
         
-        if (CDAudio_ScanForMedia ([[NSApp delegate] mediaFolder], nil))
+        if (CDAudio_ScanForMedia ([(QController*)[NSApp delegate] mediaFolder], nil))
         {
             NSUInteger  numTracks = 0;
             
@@ -333,7 +333,7 @@ void	CD_f (void)
                 numTracks = [sCDAudioTrackList count];
             }
             
-            if ([[NSApp delegate] mediaFolder] == nil)
+            if ([(QController*)[NSApp delegate] mediaFolder] == nil)
             {
                 Con_Print ("CD");
             }
@@ -350,7 +350,7 @@ void	CD_f (void)
     // the following commands require a valid track array, so build it, if not present:
     if (sCDAudioTrackList == nil)
     {
-        if (!CDAudio_ScanForMedia ([[NSApp delegate] mediaFolder], nil))
+        if (!CDAudio_ScanForMedia ([(QController*)[NSApp delegate] mediaFolder], nil))
         {
             return;
         }
@@ -399,7 +399,7 @@ void	CD_f (void)
     // eject the CD:
     if (Q_strcasecmp (arg, "eject") == 0)
     {
-        if (([[NSApp delegate] mediaFolder] == nil) && (sCDAudioMountPath != nil))
+        if (([(QController*)[NSApp delegate] mediaFolder] == nil) && (sCDAudioMountPath != nil))
         {
             NSURL*      url = [NSURL fileURLWithPath: sCDAudioMountPath];
             NSError*    err = nil;

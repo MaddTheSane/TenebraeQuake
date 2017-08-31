@@ -50,10 +50,10 @@ Header for interfacing with the lexer
 
 void SC_Start(const char *bytes, int len);
 void SC_End(void);
-char *SC_ParseString();
-float SC_ParseFloat();
-char *SC_ParseIdent();
-int	SC_ParseToken();
+char *SC_ParseString(void);
+float SC_ParseFloat(void);
+char *SC_ParseIdent(void);
+int	SC_ParseToken(void);
 
 int SC_BlendModeForName(char *name);
 

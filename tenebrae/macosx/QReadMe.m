@@ -60,14 +60,13 @@ int	main (int argc, const char** ppArgv)
 {
     FD_UNUSED (argc, ppArgv);
     
-    NSAutoreleasePool*  pool    = [[NSAutoreleasePool alloc] init];
+    @autoreleasepool {
     NSApplication*      app     = [NSApplication sharedApplication];
     ReadMe*             readme  = [[ReadMe alloc] init];
 
     [app setDelegate: readme];
     [app run];
-    [readme release];
-    [pool release];
+    }
     
     return 0;
 }
